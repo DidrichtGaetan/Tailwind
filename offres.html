@@ -25,23 +25,16 @@
   </head>
   <body>
 
-    <section class="relative backgroud-acceuil">
+    <section class="relative backgroud-offre">
 
         <!-- Navbar -->
         <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
 
-          <div class="flex justify-between hidden">
-            <a class="" href="#accueil">
-                <img 
-                src="ressources/logoFullScreen.PNG" 
-                alt="rocket logo" 
-                class="w-8">
-            </a>
-  
-            <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
-              <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
-            </button>
-          </div>
+            <div class="flex">
+                <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+                  <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+                </button>
+            </div>
   
           <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
   
@@ -103,11 +96,91 @@
   
           </ul>
         </nav>
-  
-        <!-- Accueil -->
-  
-        
 
+        <div id="accueil" class="px-4 pt-56 pb-56 text-center sm:pb-80 md:pt-20">
+  
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block text-color-a xl:inline pb">Tu viaje linguistico</span>
+              <span class="block text-white xl:inline">CENTRO DE IDIOMAS</span>
+            </h1>
+            <p hidden>f</p>
+            <p hidden>f</p>
+            <p hidden>f</p>
+          </div>
+    
+          <div class="absolute -translate-x-1/2 bottom-4 left-1/2 md:bottom-10">
+            <a href="#services" class="flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full shadow-lg animate-bounce ring-1 ring-slate-900/5 sm:w-16 sm:h-16">
+              <svg class="w-6 h-6 text-color-a sm:w-8 " fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+          </div>
+    </section>
+
+    <section id="nos-offres" class="pt-14 backgroud-offre-lite">
+
+        <div class="">
+            <div class="mx-auto title-container">
+                <h1 class="title">QUE OFRECEMOS</h1>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col lg:flex-row">
+
+            <div class="order-2 w-full px-10 pt-10 pb-16 text-center cta-striper-bg md:py-32 lg:w-1/3 lg:order-1">
+             
+              <h2 class="text-2xl font-extrabold text-color-a sm:text-3xl md:text-5xl">
+                <span class="block mb-2">Clases particulares</span>
+              </h2>
+              <p class="max-w-xs mx-auto mt-3 font-extrabold text-gray-900 text-md sm:text-xl md:mt-5 md:max-w-md">
+                ¿ Quieres aprender solo ?  
+              </p>
+              <p class="max-w-xs mx-auto mt-3 text-gray-800 text-md sm:text-xl md:mt-5 md:max-w-md">
+                Tu viaje lingüístico ofrece clases particulares en la academia o a domicilio. 
+              </p>
+              <a href="#" class="min-w-[200px] text-color-a mt-5 mx-auto inline-block px-8 py-3 border-transparent font-medium rounded-md text-white text-md md:mt-10 md:text-xl">
+                Pide tu curso 
+              </a>
+            </div>
+      
+            <div class="order-2 w-full px-10 pt-10 pb-16 text-center cta-striper-bg md:py-32 lg:w-1/3 lg:order-2">
+             
+                <h2 class="text-2xl font-extrabold text-color-a sm:text-3xl md:text-5xl">
+                  <span class="block mb-2">En groupos reducidos</span>
+                </h2>
+                <p class="max-w-xs mx-auto mt-3 font-extrabold text-gray-900 text-md sm:text-xl md:mt-5 md:max-w-md">
+                    ¿ Quieres aprender en groupos ?  
+                  </p>
+                <p class="max-w-xs mx-auto mt-3 text-gray-800 text-md sm:text-xl md:mt-5 md:max-w-md">
+                    Tu viaje lingüístico ofrece clases de francés, inglés y español en grupos reducidos en función 
+                    del nivel que necesitas y de tus objetivos (repaso escolar, placer, exámenes oficiales, trabajo,…) 
+                </p>
+                <a href="#" class="min-w-[200px] text-color-a mt-5 mx-auto inline-block px-8 py-3 border-transparent font-medium rounded-md text-white text-md md:mt-10 md:text-xl">
+                    Saber más 
+                </a>
+            </div>
+
+            <div class="order-2 w-full px-10 pt-10 pb-16 text-center cta-striper-bg md:py-32 lg:w-1/3 lg:order-3">
+             
+                <h2 class="text-2xl font-extrabold text-color-a sm:text-3xl md:text-5xl">
+                  <span class="block mb-2">Intensivos</span>
+                  <span class="block text-gray-800"></span>
+                </h2>
+                <p class="max-w-xs mx-auto mt-3 font-extrabold text-gray-900 text-md sm:text-xl md:mt-5 md:max-w-md">
+                    ¿No tienes mucho tiempo y quieres aprender tus objetivos de manera rápida o tienes prisa de poder defenderte rápidamente en un idioma? 
+                </p class="max-w-xs mx-auto mt-3 text-gray-800 text-md sm:text-xl md:mt-5 md:max-w-md">
+                <p class="max-w-xs mx-auto mt-3 text-gray-800 text-md sm:text-xl md:mt-5 md:max-w-md">
+                    Tu viaje lingüístico ofrece la posibilidad de aprender francés, inglés e español de manera intensivas  
+                </p>
+                <a href="#" class="min-w-[200px] text-color-a mt-5 mx-auto inline-block px-8 py-3 border-transparent font-medium rounded-md text-white text-md md:mt-10 md:text-xl">
+                  Pide tu curso 
+                </a>
+            </div>
+         </div>
+        </section>
+
+       
+      
     
     <script src="script.js"></script>
 </body>

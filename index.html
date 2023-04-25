@@ -29,65 +29,60 @@
 
         <!-- Navbar -->
         <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
-
-          <div class="flex justify-between hidden">
-            <a class="" href="#accueil">
-                <img 
-                src="ressources/logoFullScreen.PNG" 
-                alt="rocket logo" 
-                class="w-8">
-            </a>
-  
-            <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
-              <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
-            </button>
-          </div>
-  
-          <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#accueil"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Accueil</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#¿qui-somme-nous?"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Quién somos?</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#nos-offres"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Ofrecemos</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-              <a 
-              href="#idomas"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Idomas</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <div class="flex">
+              <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+                <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+              </button>
+            </div>
+          
+            <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+          
+              <li class="py-2 text-center border-t border-gray-200 md:border-0">
+                <a 
+                href="#accueil"
+                class="text-lg font-medium text-color-a hover:text-gray-900"
+                >Accueil</a>
+              </li>
+          
+              <li class="py-2 text-center border-t border-gray-200 md:border-0">
+                <a 
+                href="#¿qui-somme-nous?"
+                class="text-lg font-medium text-color-a hover:text-gray-900"
+                >Quién somos?</a>
+              </li>
+          
+              <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
+                <a href="#nos-offres" class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos
+                    <ul class="submenu">
+                        <li><a class="#" href="offres.html">Clases particulares</a></li>
+                        <li><a href="offres.html">En grupo reducido</a></li>
+                        <li><a href="offres.html">En empresas</a></li>
+                    </ul>
+                </a>
+              </li>
+          
+              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+                <a 
+                href="#idomas"
+                class="text-lg font-medium text-color-a hover:text-gray-900"
+                >Idomas</a>
+              </li>
+          
+              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
                 <a 
                 href="#methodologie"
                 class="text-lg font-medium text-color-a hover:text-gray-900"
                 >Methodologia</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+              </li>
+          
+              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
                 <a 
                 href="#traduction"
                 class="text-lg font-medium text-color-a hover:text-gray-900"
                 >Traduccion e interpretacion</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+              </li>
+          
+              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
                 <a 
                 href="#tarifs"
                 class="text-lg font-medium text-color-a hover:text-gray-900"
@@ -103,7 +98,7 @@
   
           </ul>
         </nav>
-  
+       
         <!-- Accueil -->
   
         <div id="accueil" class="px-4 pt-56 pb-56 text-center sm:pb-80 md:pt-20">
@@ -215,9 +210,9 @@
             <p class="mt-2 text-lg font-medium text-indigo-200">Projets</p>
           </div>
         </div>
-      </section>
-
+      </section> 
 
     <script src="script.js"></script>
+   
 </body>
 </html>

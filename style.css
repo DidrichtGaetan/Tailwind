@@ -22,6 +22,17 @@
     background-size: cover;
 }
 
+.backgroud-offre {
+    background-image: url(ressources/groupe.jpg);
+    width: 100%;
+    background-position: 10% 20%;
+    background-size: cover;
+}
+
+.backgroud-offre-lite {
+    background-image: repeating-linear-gradient(135deg, rgba(79, 79, 79,0.01) 0px, rgba(79, 79, 79,0.01) 14px,rgba(94, 94, 94,0.01) 14px, rgba(94, 94, 94,0.01) 28px,rgba(109, 109, 109,0.01) 28px, rgba(109, 109, 109,0.01) 42px,rgba(124, 124, 124,0.01) 42px, rgba(124, 124, 124,0.01) 56px,rgba(139, 139, 139,0.01) 56px, rgba(139, 139, 139,0.01) 70px,rgba(154, 154, 154,0.01) 70px, rgba(154, 154, 154,0.01) 84px,rgba(169, 169, 169,0.01) 84px, rgba(169, 169, 169,0.01) 98px,rgba(184, 184, 184,0.01) 98px, rgba(184, 184, 184,0.01) 112px),repeating-linear-gradient(45deg, rgba(221, 221, 221,0.01) 0px, rgba(221, 221, 221,0.01) 14px,rgba(207, 207, 207,0.01) 14px, rgba(207, 207, 207,0.01) 28px,rgba(192, 192, 192,0.01) 28px, rgba(192, 192, 192,0.01) 42px,rgba(178, 178, 178,0.01) 42px, rgba(178, 178, 178,0.01) 56px,rgba(164, 164, 164,0.01) 56px, rgba(164, 164, 164,0.01) 70px,rgba(150, 150, 150,0.01) 70px, rgba(150, 150, 150,0.01) 84px,rgba(135, 135, 135,0.01) 84px, rgba(135, 135, 135,0.01) 98px,rgba(121, 121, 121,0.01) 98px, rgba(121, 121, 121,0.01) 112px),linear-gradient(90deg, #ffffff,#ffffff);
+}
+
 .title {
     font-family: var(--title-main-font);
     font-size: var(--fs-42);
@@ -115,13 +126,8 @@
 }
 
 .logo {
-    font-size: var(--fs-50);
-    color: var(--main-white);
-    font-weight: 600;
-    cursor: default;
-    font-family: var(--title-main-font);
-    margin-right: auto;
-
+    width: 20%;
+    margin-right: 5px;
 }
 
 .navbar a {
@@ -159,9 +165,61 @@
     font-family: var(--title-font);
   }
 
+nav ul .submenu {
+    position: absolute;
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5%;
+}
+
+nav ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+
+}
+
+nav ul .submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul .submenu li a{
+    font-size: var(--fs-16);
+    width: 100%;
+    font-weight: 500;
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+  
+
+/* Show the submenu when hovering over the parent link */
+#menu-ofrecemos:hover .submenu {
+  display: block;
+  visibility: visible;
+  margin: 0;
+}
+ 
+
 @media only screen and (max-width: 768px) {
     .object-cover {
       display: none;
+    }
+
+    .backgroud-acceuil {
+        background-position: 45% 40%;
+    }
+
+    .title-container {
+        width: 50%;
+    }
+
+    .title {
+        font-size: 1.25rem;
     }
   }
 
