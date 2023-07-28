@@ -76,6 +76,70 @@
   --fs-72: 4.5rem;
 
 }
+
+footer {
+    background-color: #CBB26A;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-c {
+    width: 900px;
+    margin: auto;
+    height: 500px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    border: 2px solid #CBB26A;
+    padding: 4rem 5rem;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.textblock-c {
+    width: 45%;
+}
+
+.textblock-c .tt{
+    
+    color:#CBB26A;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.textblock-c .sub-title-c {
+
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.textblock-c p {
+    margin-bottom: 1.3rem;
+
+}
+
+a.btn {
+    border: 1px solid #CBB26A;
+    color: #CBB26A;
+    padding: 1.2rem 2.2rem;
+    margin-top: 3.125rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ .img-c {
+    position: absolute;
+    top: 14%;
+    right: -25%;
+    width: 50%;
+}
+
 .img-large {
     width: 100%;
     height: auto;
@@ -85,6 +149,13 @@
 /** nav */
 .bg-nav {
     background-color: #FFFFFF;
+}
+
+.backgroud-clases {
+    background-image: url(ressources/groupe.jpg);
+    width: 100%;
+    background-position: 10% 50%;
+    background-size: cover;
 }
 
 .background-lite {
@@ -217,6 +288,7 @@ nav ul .submenu li a{
     .title-container {
         width: 50%;
     }
+
 
     .title {
         font-size: 1.25rem;
