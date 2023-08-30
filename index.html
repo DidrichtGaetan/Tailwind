@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
       rel="stylesheet"
@@ -28,7 +29,7 @@
     <section class="relative backgroud-acceuil">
 
         <!-- Navbar -->
-        <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
+        <nav class="top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
             <div class="flex">
               <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
                 <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
@@ -39,7 +40,7 @@
           
               <li class="py-2 text-center border-t border-gray-200 md:border-0">
                 <a 
-                href="#accueil"
+                href="index.html"
                 class="text-lg font-medium text-color-a hover:text-gray-900"
                 >Accueil</a>
               </li>
@@ -98,6 +99,8 @@
   
           </ul>
         </nav>
+
+        
        
         <!-- Accueil -->
   
@@ -130,10 +133,10 @@
         </div>
 
         <div class="container grid max-w-full grid-cols-2 gap-4 px-4 pt-20 pb-40 sm:px-20">
-                    <div class="col-span-1">
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <img src="ressources/metodologia.jpg" alt="" class="object-cover w-10/12 h-10/12">
                     </div>
-                    <div class="flex flex-wrap col-span-1 sm:col-span-1">
+                    <div class="flex flex-wrap">
                         <div class="w-full p-2 sm:w-1/2 md:w-1/4">
                             <a href="#accueil">
                                 <img src="ressources/frances.jpg" alt="francès" class="rounded-md img-large">
@@ -184,38 +187,32 @@
         </div>
    
     </section>
-        <!-- Bandeau bleu -->
-    <section class="px-4 py-12 text-center background-or sm:py-16 sm:px-6 lg:px-8 lg:py-20">
-        <h2 class="text-2xl font-extrabold text-white md:text-5xl">
-          10K+ Développeurs déjà convaincus
-        </h2>
-        <p class="max-w-md px-4 mx-auto mt-3 text-indigo-200 text-md sm:text-xl sm:mt-4 md:max-w-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, et?
-        </p>
-  
-        <div class="flex flex-col items-center justify-center mt-10 space-y-10 sm:space-y-0 sm:space-x-10 sm:flex-row">
+        <section id="¿qui-somme-nous?" class="px-4 py-12 text-center background-or sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+          <img id="logo" src="ressources/logo.png" alt="Logo de Alicia Didricht" class="mx-auto shadow-md opacity-0 logo">
+          <p class="max-w-xl p-2 px-4 mx-auto mt-6 text-white text-md sm:text-xl sm:mt-4 md:max-w-2xl lg:max-w-4xl">
+            Tu Viaje Lingüístico brinda clases particulares a domicilio, en la academia, online o en empresa y siempre según tus objetivos; aprender un nuevo idioma, 
+            presentarte a un examen oficial, obtener una titulación, abrirte nuevas puertas en el mundo laboral, repaso escolar,…
+          </p>
+        
+          <div class="flex flex-col items-center justify-center mt-10 space-y-10 sm:space-y-0 sm:space-x-10 sm:flex-row">
   
           <div class="flex flex-col items-center justify-center">
-            <p class="text-4xl font-extrabold text-white md:text-5xl">100%</p>
-            <p class="mt-2 text-lg font-medium text-indigo-200">En ligne</p>
+            <img src="ressources/phone.png" alt="En ligne" class="w-12 h-12 md:w-16 md:h-16">
+            <p class="mt-2 text-lg font-medium text-white">04/93.58.10.44</p>
           </div>
   
           <div class="flex flex-col items-center justify-center">
-            <p class="text-4xl font-extrabold text-white md:text-5xl">24/7</p>
-            <p class="mt-2 text-lg font-medium text-indigo-200">Support</p>
+            <img src="ressources/email.png" alt="En ligne" class="w-12 h-12 md:w-16 md:h-16">
+            <p class="mt-2 text-lg font-medium text-white">gaetan.didricht@hotmail.com</p>
           </div>
   
-          <div class="flex flex-col items-center justify-center">
-            <p class="text-4xl font-extrabold text-white md:text-5xl">100K+</p>
-            <p class="mt-2 text-lg font-medium text-indigo-200">Projets</p>
-          </div>
         </div>
       </section> 
       
       <section id="contact" class="pb-32 bg-gray-50 md:pb-40">
 
         <h2 class="pt-10 pb-6 text-3xl font-medium text-center md:text-4xl">
-          Rentrons en contact
+          Contactez moi
         </h2>
         <hr class="h-1 mx-auto mb-10 bg-gray-600 bloc w-44">
   
@@ -223,25 +220,25 @@
   
           <div>
             <label for="nom" class="block mb-2 text-gray-500">Nom complet</label>
-            <input type="text" id="nom" placeholder="Votre nom" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
+            <input type="text" id="nom" placeholder="" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
           </div>
   
           <div>
             <label for="prenom" class="block mb-2 text-gray-500">Prénom</label>
-            <input type="text" id="prenom" placeholder="Votre nom" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
+            <input type="text" id="prenom" placeholder="" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
           </div>
   
           <div>
             <label for="entreprise" class="block mb-2 text-gray-500">Votre entreprise</label>
-            <input type="text" id="entreprise" placeholder="Votre nom" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
+            <input type="text" id="entreprise" placeholder="" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200">
           </div>
   
           <div>
             <label for="message" class="block mb-2 text-gray-500">Votre message</label>
-            <textarea type="text" id="message" placeholder="Votre nom" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200"></textarea>
+            <textarea type="text" id="message" placeholder="" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200"></textarea>
           </div>
   
-          <button class="px-6 py-3 text-base font-medium text-white bg-blue-700 border-transparent rounded-md shadow-sm">Envoyer</button>
+          <button class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or">Envoyer</button>
         </form>
   
       </section>
@@ -269,6 +266,6 @@
       </footer>
       
     <script src="script.js"></script>
-   
+    
 </body>
 </html>

@@ -115,6 +115,31 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.container-large {
+    width: 1000px;
+    margin: auto;
+    height: 700px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    border: 2px solid #CBB26A;
+    padding: 4rem 5rem;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .textblock-large {
+    position: relative;
+    max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px;
+    background-color: white;
+    text-align: justify;
+    z-index: 2;
+  }
+  
+
 .textblock-c .sub-title-c {
 
     font-size: 1.2rem;
@@ -135,7 +160,7 @@ a.btn {
     display: inline-block;
 }
 
- .img-c {
+.img-c {
     position: absolute;
     top: 14%;
     right: -25%;
@@ -147,6 +172,10 @@ a.btn {
     height: auto;
     max-width: 600px;
     max-height: 600px;
+}
+
+@media only screen and(max-width) {
+    
 }
 /** nav */
 .bg-nav {
@@ -199,9 +228,17 @@ a.btn {
 }
 
 .logo {
-    width: 20%;
-    margin-right: 5px;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    transition: opacity 1s ease-in-out;
 }
+
+.fade-in {
+    opacity: 1;
+  }
 
 .navbar a {
     position: relative;
