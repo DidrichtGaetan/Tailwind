@@ -46,10 +46,10 @@
 }
 
 .title {
-    font-family: var(--title-main-font);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--fs-42);
     color: var(--nav-white);
-    font-style: var(--title-main-font);
+    font-style: Georgia, 'Times New Roman', Times, serif;
 }
 
 .texte {
@@ -74,6 +74,7 @@
   --base-font: Open sans, sans-serif;
   --title-font: Merriweather, serif;
   --title-main-font: Dancing Script, cursive;
+  --title-rubrique: Gagalin,sans-serif;
 
   /* Font-size */
   --fs-14: 0.875rem;
