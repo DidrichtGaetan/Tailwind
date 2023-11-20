@@ -52,6 +52,10 @@
     font-style: Georgia, 'Times New Roman', Times, serif;
 }
 
+.background-tarif {
+    background-color: #FFF5E1;
+}
+
 .texte {
     font-family: var(--main-black);
     font-size: var(--fs-20);
@@ -143,6 +147,43 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
+  @media only screen and (max-width: 768px) {
+    .container-large {
+        width: 400px;
+        margin: auto;
+        height: auto;
+        background-color: #fdfdfd;
+        padding: 3rem 4rem;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .textblock-c {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .img-c {
+        display: none;
+    }
+
+    .container-c {
+        width: 400px;
+        margin: auto;
+        height: 500px;
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        border: 2px solid #CBB26A;
+        padding: 4rem 5rem;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+   
+  }
   
   .textblock-large {
     position: relative;
@@ -206,6 +247,10 @@ a.btn {
 
 .bg-lite {
     background-color: #e0c986;
+}
+
+.color-title-card {
+    color: #CBB26A;
 }
 
 .background-lite {

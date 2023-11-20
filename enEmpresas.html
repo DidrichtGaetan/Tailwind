@@ -29,91 +29,87 @@
     <section class="relative backgroud-clases">
       <!-- Navbar -->
 
-      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
-            <div class="flex">
-              <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
-                <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
-              </button>
-            </div>
-          
-            <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
-          
-              <li class="py-2 text-center border-t border-gray-200 md:border-0">
-                <a 
-                href="#accueil"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Accueil</a>
-              </li>
-          
-              <li class="py-2 text-center border-t border-gray-200 md:border-0">
-                <a 
-                href="#¿qui-somme-nous?"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Quién somos?</a>
-              </li>
-          
-              <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
-                <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos
-                    <ul class=" submenu">
-                        <li class="pt-6 "><a href="clasesParticulares.html">Clases particulares</a></li>
-                        <li class="pt-6 "><a href="enGrupoReducido.html">En grupo</a></li>
-                        <li class="pt-6 "><a href="enEmpresas.html">En empresas</a></li>
-                    </ul>
-                </a>
-              </li>
-          
-              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#idomas"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Idomas</a>
-              </li>
-          
-              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#methodologie"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Methodologia</a>
-              </li>
-          
-              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#traduction"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Traduccion e interpretacion</a>
-              </li>
-          
-              <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#tarifs"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Tarifas</a>
-            </li>
+      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
 
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#contact"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Contacto</a>
-            </li>
-  
-          </ul>
-        </nav>
+        <div class="flex items-center justify-between md:justify-center">
+          <a href="#accueil">
+            <img 
+            src="ressources/logocoupe.png" 
+            alt="rocket logo" 
+            class="w-12">
+          </a>
+          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+            <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+          </button>
+        </div>
+        
+      
+        <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+        
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Accueil</a>
+          </li>
+      
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a 
+            href="index.html#¿qui-somme-nous?"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Quién somos?</a>
+          </li>
+      
+          <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos</a>
+            <ul class="hidden submenu md:block">
+                <li class="pt-6"><a href="clasesParticulares.html">Clases particulares</a></li>
+                <li class="pt-6"><a href="enGrupoReducido.html">En grupo</a></li>
+                <li class="pt-6"><a href="enEmpresas.html">En empresas</a></li>
+            </ul>
+        </li>
+        
+      
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="#idomas"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Idomas</a>
+          </li>
+      
+      
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html#Tarifas"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Tarifas</a>
+        </li>
+
+        <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html#contact"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Contacto</a>
+        </li>
+
+      </ul>
+      </nav>
      
     </section>
     
-    <body>
+    
         <div class="container-c">
-          <div class="textblock-c">
-            <h1 class="tt">Intensivos</h1>
-            <h4 class="sub-title-c">¿No tienes mucho tiempo y quieres aprender tus objetivos de manera rápida o tienes prisa de poder defenderte rápidamente en un idioma? </h4>
-            <p>Tu viaje lingüístico ofrece la posibilidad de aprender francés, inglés e español de manera intensivas</p>
-            <a href="#">Pide tu curso</a>
+          <div class="md:w-1/2 md:pr-3">
+            <h1 class="mb-2 text-3xl font-bold color-title-card">Intensivos</h1>
+            <h5 class="mb-4 text-xl">¿No tienes mucho tiempo y quieres aprender tus objetivos de manera rápida o tienes prisa de poder defenderte rápidamente en un idioma? </h5>
+            <p class="mt-4 mb-4 text-large">Tu viaje lingüístico ofrece la posibilidad de aprender francés, inglés e español de manera intensivas</p>
+            <a class="mb-4" href="#">Pide tu curso</a>
           </div> 
           
           <img class="img-c" src="ressources/empresas.jpg" alt="">
         </div>
-    </body>
+    
+    
     <footer class="py-5 footer">
 
       <h3 class="pb-5 text-3xl text-center text-white">Retrouvez-nous ici</h3>
