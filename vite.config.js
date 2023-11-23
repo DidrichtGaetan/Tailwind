@@ -7,7 +7,7 @@ module.exports = defineConfig({
         main: './index.html',
         particulares: './clasesParticulares.html',
         grupo: './enGrupoReducido.html',
-        script: './script.js',
+        script: ['./script.js'],
       }
     }
   }
