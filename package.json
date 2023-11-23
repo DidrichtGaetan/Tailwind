@@ -5,6 +5,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "css": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
+    "build": "vite build && npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
   }
 }
