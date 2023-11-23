@@ -1017,20 +1017,12 @@ video {
   padding-top: 3.5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-56 {
   padding-top: 14rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -1600,6 +1592,11 @@ nav ul .submenu li a{
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-gray-500:hover {
+  --tw-shadow-color: #6b7280;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 @media (min-width: 640px) {
