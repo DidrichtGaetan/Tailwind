@@ -1304,17 +1304,17 @@ body {
 }
 
 .container-c {
-  width: 900px;
+  width: 700px;
   margin: auto;
   height: 500px;
   background-color: #fdfdfd;
   border-radius: 10px;
   border: 2px solid #CBB26A;
-  padding: 4rem 5rem;
+  padding: 4rem 7rem;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .textblock-c {
@@ -1374,14 +1374,13 @@ body {
   .container-c {
     width: 400px;
     margin: auto;
-    height: 500px;
+    height: 600px;
     background-color: #fdfdfd;
+    padding: 4rem 4rem;
     border-radius: 10px;
     border: 2px solid #CBB26A;
-    padding: 4rem 5rem;
-    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 50px;
   }
 }
@@ -1418,9 +1417,9 @@ a.btn {
 
 .img-c {
   position: absolute;
-  top: 14%;
+  top: 15%;
   right: -25%;
-  width: 50%;
+  width: 40%;
 }
 
 .img-large {

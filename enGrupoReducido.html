@@ -25,115 +25,104 @@
   </head>
   <body>
 
-    <section class="relative backgroud-offre">
+    <section class="relative backgroud-clases">
+      <!-- Navbar -->
 
-        <!-- Navbar -->
-        <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
+      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
 
-            <div class="flex">
-                <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
-                  <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
-                </button>
-            </div>
-  
-          <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#accueil"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Accueil</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#¿qui-somme-nous?"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Quién somos?</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#nos-offres"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Ofrecemos</a>
-            </li>
-  
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-              <a 
-              href="#idomas"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Idomas</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#methodologie"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Methodologia</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#traduction"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Traduccion e interpretacion</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#tarifs"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Tarifas</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#contact"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Contacto</a>
-            </li>
-  
-          </ul>
-        </nav>
+        <div class="flex items-center justify-between md:justify-center">
+          <a href="#accueil">
+            <img 
+            src="ressources/logocoupe.png" 
+            alt="rocket logo" 
+            class="w-12">
+          </a>
+          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+            <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+          </button>
+        </div>
         
+      
+        <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+        
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Accueil</a>
+          </li>
+      
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a 
+            href="index.html#¿qui-somme-nous?"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Quién somos?</a>
+          </li>
+      
+          <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos</a>
+            <ul class="hidden submenu md:block">
+                <li class="pt-6"><a href="clasesParticulares.html">Clases particulares</a></li>
+                <li class="pt-6"><a href="enGrupoReducido.html">En grupo</a></li>
+                <li class="pt-6"><a href="enEmpresas.html">En empresas</a></li>
+            </ul>
+        </li>
+      
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html#Tarifas"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Tarifas</a>
+          </li>
+          
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html#contact"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Contacto</a>
+          </li>
+
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+              <a 
+              href="index.html#horaire"
+              class="text-lg font-medium text-color-a hover:text-gray-900"
+              >Horarios</a>
+          </li>
+
+      </ul>
+      </nav>
+     
     </section>
     
-    <section id="services" class="relative flex flex-col lg:flex-row">
+    <body>
+        <div class="container-c">
+          <div class="md:w-1/2 md:pr-3">
+            <h1 class="mb-2 text-3xl font-bold color-title-card title-font">En grupo</h1>
+            <h4 class="mb-4 text-xl title-font">¿ Quieres aprender en grupo ?</h4>
+            <p class="mb-10">Descubra nuestro aprendizaje colaborativo en grupo, que combina diversidad e intercambio. Afronten juntos el reto lingüístico, crezcan y creen vínculos memorables. 
+              Transforme su experiencia lingüística con nosotros.</p>
+              <a href="#contact" class="w-full px-4 py-2 mt-8 mb-10 text-base font-semibold text-center text-white bg-gray-800 border border-gray-500 rounded-md background-or hover:bg-gray-900">
+                Pide tu curso 🔥
+            </a>
+          </div> 
+          
+          <img class="img-c" src="ressources/en grupo.jpg" alt="">
+        </div>
+    </body>
 
-      <div class="order-2 w-full px-10 pt-10 pb-16 text-center cta-striper-bg md:py-32 lg:w-1/2 lg:order-1 backgrou">
-       
+     <!-- Footer -->
 
-        <h2 class="text-2xl font-extrabold text-gray-800 sm:text-3xl md:text-5xl">
-          <span class="block">Clases particulares</span>
-          <span class="block text-color-a md:mt-5 pb-7">¿ Quieres aprender solo ?</span>
-        </h2>
-        <p class="max-w-xl mx-auto mt-3 font-extrabold text-gray-800 text-md sm:text-xl md:mt-6 md:max-w-md">
-          Tu viaje lingüístico ofrece clases particulares en la academia o a domicilio. 
-        </p>
-        <a href="#" class="min-w-[200px] text-color-a mt-5 mx-auto inline-block px-8 py-3 border-transparent font-medium rounded-md text-white text-md md:mt-7 md:text-xl">
-          Pide tu curso 🔥
-        </a>
+     <footer class="py-5 footer">
 
-      </div>
-
-      <div class="relative order-1 w-full overflow-hidden h-96 lg:static lg:w-1/2 lg:h-full lg:order-2">
-        <img src="ressources/groupe.jpg" alt="homme au travail" class="absolute object-cover object-center w-full h-full lg:w-1/2">
-      </div>
-
-    </section>
-
-    <footer class="py-5 background-or">
-
-      <h3 class="pb-5 text-3xl text-center text-white">Retrouvez-nous ici</h3>
+      <h3 class="pb-5 text-3xl text-center text-white title-font">Encuéntrenos aquí</h3>
 
       <div class="flex justify-center mb-5 space-x-6 text-white">
 
-        <a href="#">
+        <a href="https://www.instagram.com/tuviajelinguistico/">
           <img src="ressources/fb.svg" alt="icône fb" class="w-6">
         </a>
       
-        <a href="#">
+        <a href="https://www.instagram.com/tuviajelinguistico/">
           <img src="ressources/instagram.svg" alt="icône instagram" class="w-6">
         </a>
 
@@ -141,12 +130,11 @@
 
       <hr class="mx-auto mb-5 w-36">
 
-      <p class="mt-8 text-base text-center text-gray-400 md:mt-0">&copy; 2022 SEOTOOL, TOUS DROITS RÉSERVÉS</p>
+      <p class="mt-8 text-base text-center text-white md:mt-0">&copy; 2023, TODOS LOS DERECHOS RESERVADOS</p>
 
     </footer>
-
-
-
+   
+    
     <script src="script.js"></script>
 </body>
 </html>
