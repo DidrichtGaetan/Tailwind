@@ -7,5 +7,9 @@
     "start": "vite",
     "css": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
     "build": "vite build && npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "emailjs": "^4.0.3"
   }
 }

@@ -24,6 +24,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("nb5E1jgu2rp7d0jUF");
+      })();
+    </script>
   </head>
   <body>
 
@@ -429,6 +437,8 @@
             Esperamos tener noticias suyas y satisfacer sus necesidades.
           </p>
         </div>
+
+        <div></div>
         
         <form class="relative max-w-sm px-4 py-16 pl-12 mx-auto bg-white rounded-lg space-y-9 sm:px-6 lg:px-8 xl lg:max-w-xl">
           
@@ -448,7 +458,7 @@
   
           <div>
             <label for="entreprise" class="block mb-2 text-gray-500"> Correo electrónico : </label>
-            <input type="text" id="entreprise" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
+            <input type="text" id="replyto" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
           </div>
   
           <div>
@@ -456,7 +466,32 @@
             <textarea type="text" id="message" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full"></textarea>
           </div>
   
-          <button class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or">Envoyer</button>
+          <button type="submit" class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or" onclick="sendMail()">Envoyer</button>
+            <!-- Send mail -->
+            <script>
+              function sendMail() {
+            
+                let params = {
+                  sendername: document.querySelector("#nom").value,
+                  reply_to: document.querySelector("#replyto").value,
+                  from_name: document.querySelector("#nom").value,
+                  message: document.querySelector("#message").value
+                }
+            
+                let serviceID = "service_92k0hml";
+                let templateID = "template_g6j6m2p";
+            
+                emailjs.send(serviceID, templateID, params)
+                  .then(res => {
+                    console.log("Email sent:", res);
+                    alert("Email envoyé");
+                  })
+                  .catch(error => {
+                    console.error("Error sending email:", error);
+                    alert("Erreur lors de l'envoi de l'e-mail");
+                  });
+              }
+          </script>
         </form>
       </div>
       </section>
@@ -564,6 +599,8 @@
             </tbody>
           </table>
       </div>
+
+    </div>
       </section>
       
       <!-- Footer -->
@@ -591,6 +628,7 @@
       </footer>
       
     <script src="script.js"></script>
+    </script>
     
 </body>
 </html>
