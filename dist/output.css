@@ -1603,6 +1603,10 @@ nav ul .submenu li a{
     margin-left: 0px;
   }
 
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .sm\:grid {
     display: grid;
   }

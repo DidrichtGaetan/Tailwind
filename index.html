@@ -108,6 +108,8 @@
   
           <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             <span class="block ml-8 text-color-a xl:inline pb title-font">Tu viaje linguistico</span>
+          </h1>
+          <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl sm:mt-6">
             <span class="block ml-8 text-white xl:inline title-font">CENTRO DE IDIOMAS</span>
           </h1>
           <p hidden>f</p>
@@ -440,7 +442,7 @@
 
         <div></div>
         
-        <form class="relative max-w-sm px-4 py-16 pl-12 mx-auto bg-white rounded-lg space-y-9 sm:px-6 lg:px-8 xl lg:max-w-xl">
+        <form class="relative max-w-xs px-4 py-16 pl-12 mx-auto bg-white rounded-lg space-y-9 sm:px-6 lg:px-8 xl lg:max-w-xl">
           
           <div>
             <label class="block mb-4 text-xl text-color-a title-font">Contacte con nosotros</label>
@@ -627,7 +629,14 @@
   
       </footer>
       
-    <script src="script.js"></script>
+   
+    <script> 
+    const menuElementsToToggle = document.querySelectorAll(".toggle-menu");
+    const iconeToggle = document.querySelector(".icone-toggle");
+
+    const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle("hidden"));
+
+    iconeToggle.addEventListener("click", toggleMenu);
     </script>
     
 </body>
