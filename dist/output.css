@@ -626,6 +626,10 @@ video {
   margin-left: 6rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -1317,6 +1321,12 @@ body {
   margin-bottom: 70px;
 }
 
+.logo-menu {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .textblock-c {
   width: 45%;
 }
@@ -1691,12 +1701,20 @@ nav ul .submenu li a{
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:relative {
     position: relative;
   }
 
   .md\:bottom-10 {
     bottom: 2.5rem;
+  }
+
+  .md\:left-0 {
+    left: 0px;
   }
 
   .md\:mx-auto {
@@ -1712,6 +1730,10 @@ nav ul .submenu li a{
     display: block;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1722,6 +1744,10 @@ nav ul .submenu li a{
 
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-28 {
+    height: 7rem;
   }
 
   .md\:w-1\/4 {

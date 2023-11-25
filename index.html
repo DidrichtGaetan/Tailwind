@@ -38,22 +38,23 @@
     <section class="relative backgroud-acceuil">
 
 
-      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
+      <nav class="fixed top-0 z-20 grid w-full md:h-28 grid-cols-none p-4 shadow-md md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
 
-        <div class="flex items-center justify-between md:justify-center">
-          <a href="#accueil">
+        <div class="flex items-center justify-between md:justify-center md:inline md:absolute md:left-0 ">
+          <a href="#accueil" class="hidden md:block">
             <img 
-            src="ressources/logocoupe.png" 
-            alt="rocket logo" 
-            class="w-12">
+              src="ressources/logocoupe.png" 
+              alt="logo" 
+              class="ml-4 logo-menu"
+            >
           </a>
-          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden md:space-x-10">
             <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
           </button>
         </div>
         
       
-        <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+        <ul class="flex-col hidden px-1 pt-6 toggle-menu  md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
         
           <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
             <a 
@@ -450,22 +451,22 @@
 
           <div>
             <label for="Nom" class="block mb-2 text-gray-500">Apellido :</label>
-            <input type="text" id="nom" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
+            <input type="text" id="nom" placeholder="" class="block w-11/12 px-4 py-2 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
           </div>
   
           <div>
             <label for="prenom" class="block mb-2 text-gray-500">Nombre :</label>
-            <input type="text" id="prenom" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
+            <input type="text" id="prenom" placeholder="" class="block w-11/12 px-4 py-2 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
           </div>
   
           <div>
             <label for="entreprise" class="block mb-2 text-gray-500"> Correo electrónico : </label>
-            <input type="text" id="replyto" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
+            <input type="text" id="replyto" placeholder="" class="block w-11/12 px-4 py-2 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full">
           </div>
   
           <div>
             <label for="message" class="block mb-2 text-gray-500">Vuestro mensaje :</label>
-            <textarea type="text" id="message" placeholder="" class="block w-11/12 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full"></textarea>
+            <textarea type="text" id="message" placeholder="" class="block w-11/12 px-4 py-4 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full"></textarea>
           </div>
   
           <button type="submit" class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or" onclick="sendMail()">Envoyer</button>
