@@ -28,22 +28,23 @@
     <section class="relative backgroud-clases">
       <!-- Navbar -->
 
-      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
+      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:h-28 md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
 
-        <div class="flex items-center justify-between md:justify-center">
-          <a href="#accueil">
+        <div class="flex items-center justify-between md:justify-center md:inline md:absolute md:left-0 ">
+          <a href="#accueil" class="hidden md:block">
             <img 
-            src="ressources/logocoupe.png" 
-            alt="rocket logo" 
-            class="w-12">
+              src="ressources/logocoupe.png" 
+              alt="logo" 
+              class="ml-4 logo-menu"
+            >
           </a>
-          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
+          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden md:space-x-10">
             <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
           </button>
         </div>
         
       
-        <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+        <ul class="flex-col hidden px-1 pt-6 toggle-menu md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
         
           <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
             <a 
@@ -54,7 +55,7 @@
       
           <li class="py-2 text-center border-t border-gray-200 md:border-0">
             <a 
-            href="index.html#¿qui-somme-nous?"
+            href="#¿qui-somme-nous?"
             class="text-lg font-medium text-color-a hover:text-gray-900"
             >Quién somos?</a>
           </li>
@@ -70,21 +71,21 @@
       
           <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
             <a 
-            href="index.html#Tarifas"
+            href="#Tarifas"
             class="text-lg font-medium text-color-a hover:text-gray-900"
             >Tarifas</a>
           </li>
           
           <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
             <a 
-            href="index.html#contact"
+            href="#contact"
             class="text-lg font-medium text-color-a hover:text-gray-900"
             >Contacto</a>
           </li>
 
           <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
               <a 
-              href="index.html#horaire"
+              href="#horaire"
               class="text-lg font-medium text-color-a hover:text-gray-900"
               >Horarios</a>
           </li>

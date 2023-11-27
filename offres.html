@@ -28,73 +28,69 @@
     <section class="relative backgroud-offre">
 
         <!-- Navbar -->
-        <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md bg-gray-50 md:grid-cols-menu md:relative md:mx-auto bg-nav">
+        <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:h-28 md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
 
-            <div class="flex">
-                <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden">
-                  <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
-                </button>
-            </div>
-  
-          <ul class="flex-col hidden px-1 pt-6 toggle-menu bg-gray-50 md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
+          <div class="flex items-center justify-between md:justify-center md:inline md:absolute md:left-0 ">
+            <a href="#accueil" class="hidden md:block">
+              <img 
+                src="ressources/logocoupe.png" 
+                alt="logo" 
+                class="ml-4 logo-menu"
+              >
+            </a>
+            <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden md:space-x-10">
+              <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+            </button>
+          </div>
+          
+        
+          <ul class="flex-col hidden px-1 pt-6 toggle-menu md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+          
+            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
               <a 
-              href="#accueil"
+              href="index.html"
               class="text-lg font-medium text-color-a hover:text-gray-900"
               >Accueil</a>
             </li>
-  
+        
             <li class="py-2 text-center border-t border-gray-200 md:border-0">
               <a 
               href="#¿qui-somme-nous?"
               class="text-lg font-medium text-color-a hover:text-gray-900"
               >Quién somos?</a>
             </li>
-  
-            <li class="py-2 text-center border-t border-gray-200 md:border-0">
-              <a 
-              href="#nos-offres"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Ofrecemos</a>
-            </li>
-  
+        
+            <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
+              <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos</a>
+              <ul class="hidden submenu md:block">
+                  <li class="pt-6"><a href="clasesParticulares.html">Clases particulares</a></li>
+                  <li class="pt-6"><a href="enGrupoReducido.html">En grupo</a></li>
+                  <li class="pt-6"><a href="enEmpresas.html">En empresas</a></li>
+              </ul>
+          </li>
+        
             <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
               <a 
-              href="#idomas"
+              href="#Tarifas"
               class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Idomas</a>
+              >Tarifas</a>
             </li>
-
+            
             <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#methodologie"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Methodologia</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#traduction"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Traduccion e interpretacion</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#tarifs"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Tarifas</a>
-            </li>
-
-            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-                <a 
-                href="#contact"
-                class="text-lg font-medium text-color-a hover:text-gray-900"
-                >Contacto</a>
+              <a 
+              href="#contact"
+              class="text-lg font-medium text-color-a hover:text-gray-900"
+              >Contacto</a>
             </li>
   
-          </ul>
+            <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+                <a 
+                href="#horaire"
+                class="text-lg font-medium text-color-a hover:text-gray-900"
+                >Horarios</a>
+            </li>
+  
+        </ul>
         </nav>
 
         <div id="accueil" class="px-4 pt-56 pb-56 text-center sm:pb-80 md:pt-20">
