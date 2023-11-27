@@ -9,6 +9,9 @@ module.exports = defineConfig({
         grupo: './enGrupoReducido.html',
         online: './online.html',
         empresas: './enEmpresas.html',
+        espagnol: 'espagnol.html',
+        francais: 'francais.html',
+        anglais: 'anglais.html',
         mainJS: './script.js'
       }
     }
