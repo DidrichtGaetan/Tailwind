@@ -12,7 +12,7 @@ module.exports = defineConfig({
         espagnol: 'espagnol.html',
         francais: 'francais.html',
         anglais: 'anglais.html',
-        mainJS: './script.js'
+        traduccion: 'traduccion.html'
       }
     }
   }
