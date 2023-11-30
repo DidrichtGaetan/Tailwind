@@ -1311,6 +1311,38 @@ body {
   flex-direction: column;
 }
 
+.custom-margin {
+  margin-bottom: 200px;
+}
+
+.img-about {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 5px 20px 5px 5px;
+}
+
+.container-about {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  margin-top: -200px;
+  /* Ajustez cette valeur en fonction de votre mise en page */
+  position: relative;
+  z-index: 1;
+}
+
+.container-about::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
 .container-c {
   width: 700px;
   margin: auto;
@@ -1396,6 +1428,19 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 120px;
     margin-bottom: 50px;
+  }
+
+  .container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+    margin-top: -200px;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
