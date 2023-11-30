@@ -242,7 +242,7 @@ body {
    
 
     .container-c {
-        width: 400px;
+        width: 350px;
         margin: auto;
         height: 670px;
         background-color: #fdfdfd;
@@ -251,9 +251,7 @@ body {
         border: 2px solid #CBB26A;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         margin-top: 120px;
-        margin-bottom: 50px;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-bottom: 50px; 
     }
 
     .container-about {
