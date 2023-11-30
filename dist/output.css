@@ -1401,6 +1401,8 @@ body {
     padding: 3rem 4rem;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .textblock-c {
@@ -1418,7 +1420,7 @@ body {
   }
 
   .container-c {
-    width: 350px;
+    width: 400px;
     margin: auto;
     height: 670px;
     background-color: #fdfdfd;
@@ -1428,6 +1430,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 120px;
     margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .container-about {
