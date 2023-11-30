@@ -1626,6 +1626,15 @@ nav ul .submenu li a{
   margin: 0;
 }
 
+.button-hover {
+  transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3);
+}
+
 @media only screen and (max-width: 768px) {
   .object-cover {
     display: none;
@@ -1644,16 +1653,6 @@ nav ul .submenu li a{
   }
 }
 
-.hover\:bg-gray-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1661,11 +1660,6 @@ nav ul .submenu li a{
 
 .hover\:shadow-gray-500:hover {
   --tw-shadow-color: #6b7280;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-gray-900:hover {
-  --tw-shadow-color: #111827;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
