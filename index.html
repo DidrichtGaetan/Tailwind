@@ -185,15 +185,15 @@
   
         </div>
   
-        <div class="flex flex-col items-center justify-center mt-20 space-y-10 text-right sm:space-y-0 sm:space-x-20 sm:flex-row"> <!-- Utilisation de text-right pour aligner le texte à droite -->
+        <div class="flex flex-col items-center justify-center mt-20 space-y-10 text-right sm:space-y-0 sm:space-x-20 sm:flex-row">
           <div class="flex flex-col items-center justify-center">
             <img src="ressources/phone.png" alt="En ligne" class="w-12 h-12 md:w-16 md:h-16">
-            <p class="mt-2 text-xl font-medium text-white title-font sm:text-2xl">641 428 140</p>
+            <a href="tel:+641428140" class="mt-2 text-xl font-medium text-white title-font sm:text-2xl button-hover">641 428 140</a>
           </div>
       
           <div class="flex flex-col items-center justify-center">
             <img src="ressources/email.png" alt="En ligne" class="w-12 h-12 md:w-16 md:h-16">
-            <p class="mt-2 text-lg font-medium text-white title-font sm:text-2xl">Tuviajelinguistico@gmail.com</p>
+            <a href="#contact" class="mt-2 text-lg font-medium text-white title-font sm:text-2xl button-hover">Tuviajelinguistico@gmail.com</a>
           </div>
   
           <div class="flex flex-col items-center justify-center">
@@ -279,10 +279,10 @@
         </section>
         
        <!-- a propos -->   
-      <section id="contact" class="pb-48 bg-lite">
+      <section  class="pb-48 bg-lite">
         
         <article class="bg-white container-about">
-            <img src="ressources/alicia.jpg" class="img-about ">
+            <img src="ressources/alicia.jpg" class="img-about button-hover">
             <h3 class="mb-4 text-3xl font-extrabold title-font color-title-card">quién soy ?</h3>
             <p class="p-2 mt-2 mb-2 ">
               Mi nombre Alicia y soy la creadora del centro de idiomas tu viaje lingüístico. 
@@ -321,6 +321,23 @@
             </p>
 
         </article>
+        
+        <div class="px-4 py-20 mx-auto mt-16 text-center max-w-7xl sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-extrabold text-white title-font sm:text-5xl">Únete a nosotros</h1>
+        </div>
+       
+        <div class="flex justify-center mb-5 space-x-6 text-white sm:space-y-0 sm:space-x-20">
+  
+          <a href="https://www.instagram.com/tuviajelinguistico/">
+            <img src="ressources/fb.svg" alt="icône fb" class="w-12 button-hover">
+          </a>
+        
+          <a href="https://www.instagram.com/tuviajelinguistico/">
+            <img src="ressources/instagram.svg" alt="icône instagram" class="w-12 button-hover">
+          </a>
+  
+        </div>
+      
     
       </section>
 
@@ -509,7 +526,7 @@
             <textarea type="text" id="message" placeholder="" class="block w-11/12 px-4 py-4 placeholder-gray-500 border-gray-300 rounded-md shadow-sm ring-1 ring-gray-200 sm:w-full"></textarea>
           </div>
   
-          <button type="submit" class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or" onclick="sendMail()">Envoyer</button>
+          <button type="submit" class="px-6 py-3 text-base font-medium text-white border-transparent rounded-md shadow-sm background-or button-hover" onclick="sendMail()">Envoyer</button>
             <!-- Send mail -->
             <script>
               function sendMail() {
