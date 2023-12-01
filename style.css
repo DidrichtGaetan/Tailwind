@@ -112,6 +112,7 @@
 
 .section-contact {
     clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+    padding-bottom: 500px;
 }
 
 .footer {
@@ -148,13 +149,41 @@ body {
     padding: 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3); 
-    margin-top: -200px; /* Ajustez cette valeur en fonction de votre mise en page */
+    margin-top: -200px; 
     position: relative;
     z-index: 1;
 }
 
 
 .container-about::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.container-map {
+    background-color: #FFFFFF;
+    max-width: 950px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3); 
+    margin-top: -350px; 
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+.map {
+    width: 540px;
+    object-fit: cover;
+    border-radius: 5%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 5px 20px 5px 5px;
+}
+
+.container-map::after {
     content:"";
     display: block;
     clear: both;
@@ -211,6 +240,7 @@ body {
 
     .section-contact {
         clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+        padding-bottom: 400px;
     }
 
     .container-large {
@@ -265,6 +295,26 @@ body {
         z-index: 1;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .container-map {
+        background-color: #FFFFFF;
+        max-width: 700px;
+        height: 650px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3); 
+        margin-top: -300px; 
+        position: relative;
+        z-index: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 200px; 
+    }
+
+    .map {
+        width: 350px;
     }
 
   }
@@ -460,6 +510,26 @@ nav ul .submenu li a{
 .button-hover:hover {
     transform: translateY(-5px);
     box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3); 
+}
+
+.divider-bg {
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 223, 127, 0.4),
+        rgba(255, 223, 127, 0.8),
+        rgba(255, 223, 127, 0.5),
+        rgba(255, 223, 127, 0.4),
+        rgba(255, 223, 127, 0.1),
+        rgba(255, 223, 127, 0.9),
+        rgba(255, 223, 127, 0.8),
+        rgba(255, 223, 127, 0.9),
+        rgba(255, 223, 127, 0.3),
+        transparent,
+        rgba(255, 223, 127, 0.7),
+        rgba(255, 223, 127, 0.3),
+        rgba(255, 223, 127, 0.6) 4px
+    ),
+    linear-gradient(90deg, rgba(255, 223, 127), rgba(218, 185, 85));
 }
 
  

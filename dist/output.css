@@ -746,6 +746,10 @@ video {
   width: 100%;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -841,6 +845,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1001,16 +1011,16 @@ video {
   padding-bottom: 8rem;
 }
 
-.pb-48 {
-  padding-bottom: 12rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
 
 .pb-56 {
   padding-bottom: 14rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
 }
 
 .pl-12 {
@@ -1296,6 +1306,7 @@ video {
 .section-contact {
   -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
           clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+  padding-bottom: 500px;
 }
 
 .footer {
@@ -1332,12 +1343,40 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
   margin-top: -200px;
-  /* Ajustez cette valeur en fonction de votre mise en page */
   position: relative;
   z-index: 1;
 }
 
 .container-about::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.container-map {
+  background-color: #FFFFFF;
+  max-width: 950px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  margin-top: -350px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 200px;
+}
+
+.map {
+  width: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 5px 20px 5px 5px;
+}
+
+.container-map::after {
   content:"";
   display: block;
   clear: both;
@@ -1391,6 +1430,7 @@ body {
   .section-contact {
     -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
             clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+    padding-bottom: 400px;
   }
 
   .container-large {
@@ -1443,6 +1483,26 @@ body {
     z-index: 1;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .container-map {
+    background-color: #FFFFFF;
+    max-width: 700px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+    margin-top: -300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+  }
+
+  .map {
+    width: 350px;
   }
 }
 
@@ -1635,6 +1695,26 @@ nav ul .submenu li a{
   box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3);
 }
 
+.divider-bg {
+  background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 223, 127, 0.4),
+        rgba(255, 223, 127, 0.8),
+        rgba(255, 223, 127, 0.5),
+        rgba(255, 223, 127, 0.4),
+        rgba(255, 223, 127, 0.1),
+        rgba(255, 223, 127, 0.9),
+        rgba(255, 223, 127, 0.8),
+        rgba(255, 223, 127, 0.9),
+        rgba(255, 223, 127, 0.3),
+        transparent,
+        rgba(255, 223, 127, 0.7),
+        rgba(255, 223, 127, 0.3),
+        rgba(255, 223, 127, 0.6) 4px
+    ),
+    linear-gradient(90deg, rgba(255, 223, 127), rgba(218, 185, 85));
+}
+
 @media only screen and (max-width: 768px) {
   .object-cover {
     display: none;
@@ -1733,6 +1813,11 @@ nav ul .submenu li a{
   .sm\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .sm\:pb-80 {
@@ -1849,6 +1934,10 @@ nav ul .submenu li a{
 
   .md\:pb-40 {
     padding-bottom: 10rem;
+  }
+
+  .md\:pb-80 {
+    padding-bottom: 20rem;
   }
 
   .md\:pt-0 {
