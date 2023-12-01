@@ -162,26 +162,14 @@ body {
 }
 
 .container-map {
-    background-color: #FFFFFF;
-    max-width: 950px;
-    height: 600px;
     margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3); 
     margin-top: -350px; 
     position: relative;
     z-index: 1;
     margin-bottom: 200px;
 }
 
-.map {
-    width: 540px;
-    object-fit: cover;
-    border-radius: 5%;
-    float: left;
-    shape-outside: margin-box;
-    margin: 5px 20px 5px 5px;
-}
+
 
 .container-map::after {
     content:"";
@@ -298,23 +286,12 @@ body {
     }
 
     .container-map {
-        background-color: #FFFFFF;
-        max-width: 700px;
-        height: 650px;
         margin: 0 auto;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3); 
-        margin-top: -300px; 
         position: relative;
         z-index: 1;
-        margin-left: 20px;
-        margin-right: 20px;
+        align-items: center;
         margin-bottom: 200px; 
-    }
-
-    .map {
-        width: 350px;
+        margin-top: -150px;
     }
 
   }
@@ -515,24 +492,22 @@ nav ul .submenu li a{
 .divider-bg {
     background-image: repeating-linear-gradient(
         45deg,
-        rgba(255, 223, 127, 0.4),
-        rgba(255, 223, 127, 0.8),
-        rgba(255, 223, 127, 0.5),
-        rgba(255, 223, 127, 0.4),
-        rgba(255, 223, 127, 0.1),
-        rgba(255, 223, 127, 0.9),
-        rgba(255, 223, 127, 0.8),
-        rgba(255, 223, 127, 0.9),
-        rgba(255, 223, 127, 0.3),
+        rgba(203, 178, 106, 0.005),
+        rgba(203, 178, 106, 0.1),
+        rgba(203, 178, 106, 0.03),
+        rgba(203, 178, 106, 0.005),
+        rgba(203, 178, 106, 0),
+        rgba(203, 178, 106, 0.3),
+        rgba(203, 178, 106, 0.1),
+        rgba(203, 178, 106, 0.3),
+        rgba(203, 178, 106, 0.03),
         transparent,
-        rgba(255, 223, 127, 0.7),
-        rgba(255, 223, 127, 0.3),
-        rgba(255, 223, 127, 0.6) 4px
+        rgba(203, 178, 106, 0.08),
+        rgba(203, 178, 106, 0),
+        rgba(203, 178, 106, 0.08) 4px
     ),
-    linear-gradient(90deg, rgba(255, 223, 127), rgba(218, 185, 85));
+    linear-gradient(90deg, rgba(203, 178, 106), rgba(184, 157, 69));
 }
-
- 
 
 @media only screen and (max-width: 768px) {
     .object-cover {
