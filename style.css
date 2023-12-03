@@ -163,7 +163,7 @@ body {
 
 .container-map {
     margin: 0 auto;
-    margin-top: -350px; 
+    margin-top: -450px; 
     position: relative;
     z-index: 1;
     margin-bottom: 200px;
@@ -199,16 +199,6 @@ body {
     margin-right: auto;
 }
 
-.textblock-c {
-    width: 45%;
-}
-
-.textblock-c .tt{
-    
-    color:#CBB26A;
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-}
 
 .container-large {
     width: 1000px;
@@ -484,8 +474,17 @@ nav ul .submenu li a{
     transition: transform 0.3s ease;
 }
 
+.card-hover {
+    transition: transform 0.3s ease;
+}
+
 .button-hover:hover {
     transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3); 
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
     box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3); 
 }
 
