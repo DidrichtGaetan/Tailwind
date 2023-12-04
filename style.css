@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.backgroud-about {
+    background-color: #FEF6E1;
+}
+
 
 .backgroud-acceuil {
     background-image: url(ressources/laptop.jpg);
