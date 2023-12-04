@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+     Tu viaje linguistico
+    </title>
+    <meta
+      name="description"
+      content=""
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="ressources/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+
+    <section class="relative backgroud-clases">
+      <!-- Navbar -->
+
+      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:h-28 md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
+
+        <div class="flex items-center justify-between md:justify-center md:inline md:absolute md:left-0 ">
+          <a href="#accueil" class="hidden md:block">
+            <img 
+              src="ressources/logocoupe.png" 
+              alt="logo" 
+              class="ml-4 logo-menu"
+            >
+          </a>
+          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden md:space-x-10">
+            <img src="ressources/menu.svg" alt="icône hamburger" class="w-6 h-6">
+          </button>
+        </div>
+        
+      
+        <ul class="flex-col hidden px-1 pt-6 toggle-menu md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+        
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="index.html"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Accueil</a>
+          </li>
+      
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a 
+            href="#¿qui-somme-nous?"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Quién somos?</a>
+          </li>
+      
+          <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos</a>
+            <ul class="hidden submenu md:block">
+                <li class="pt-6"><a href="clasesParticulares.html">Clases particulares</a></li>
+                <li class="pt-6"><a href="enGrupoReducido.html">En grupo</a></li>
+                <li class="pt-6"><a href="enEmpresas.html">En empresas</a></li>
+            </ul>
+        </li>
+      
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="#Tarifas"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Tarifas</a>
+          </li>
+          
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+            <a 
+            href="#contact"
+            class="text-lg font-medium text-color-a hover:text-gray-900"
+            >Contacto</a>
+          </li>
+
+          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
+              <a 
+              href="#horaire"
+              class="text-lg font-medium text-color-a hover:text-gray-900"
+              >Horarios</a>
+          </li>
+
+      </ul>
+      </nav>
+     
+    </section>
+   
+
+     <!-- Footer -->
+
+     <footer class="py-5 footer">
+
+      <h3 class="pb-5 text-3xl text-center text-white title-font">Encuéntrenos aquí</h3>
+
+      <div class="flex justify-center mb-5 space-x-6 text-white">
+
+        <a href="https://www.instagram.com/tuviajelinguistico/">
+          <img src="ressources/fb.svg" alt="icône fb" class="w-6">
+        </a>
+      
+        <a href="https://www.instagram.com/tuviajelinguistico/">
+          <img src="ressources/instagram.svg" alt="icône instagram" class="w-6">
+        </a>
+
+      </div>
+
+      <hr class="mx-auto mb-5 w-36">
+
+      <p class="mt-8 text-base text-center text-white md:mt-0">&copy; 2023, TODOS LOS DERECHOS RESERVADOS</p>
+
+    </footer>
+   
+    <script> 
+      const menuElementsToToggle = document.querySelectorAll(".toggle-menu");
+      const iconeToggle = document.querySelector(".icone-toggle");
+  
+      const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle("hidden"));
+  
+      iconeToggle.addEventListener("click", toggleMenu);
+    </script>
+    
+</body>
+</html>
