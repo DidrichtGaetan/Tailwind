@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "emailjs": "^4.0.3"
+    "emailjs": "^4.0.3",
+    "taos": "^1.0.5"
   }
 }

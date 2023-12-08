@@ -434,6 +434,10 @@ video {
   display: none;
 }
 
+html.js :where([class*="taos:"]:not(.taos-init)) {
+  visibility: hidden;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1359,6 +1363,30 @@ video {
   transition-duration: 150ms;
 }
 
+.\!delay-\[0ms\] {
+  transition-delay: 0ms !important;
+}
+
+.delay-\[300ms\] {
+  transition-delay: 300ms;
+}
+
+.\!duration-\[0ms\] {
+  transition-duration: 0ms !important;
+}
+
+.duration-\[1000ms\] {
+  transition-duration: 1000ms;
+}
+
+.duration-\[600ms\] {
+  transition-duration: 600ms;
+}
+
+.ease-\[cubic-bezier\(\.47\2c 0\2c \.745\2c \.715\)\] {
+  transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+
 *,
 ::before,
 ::after {
@@ -1859,11 +1887,11 @@ nav ul .submenu li a{
   }
 
   .title-container {
-    width: 50%;
+    width: 30%;
   }
 
   .title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
