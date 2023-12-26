@@ -1585,6 +1585,18 @@ body {
   z-index: 1;
 }
 
+.container-metho {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .container-about::after {
   content:"";
   display: block;
@@ -1698,6 +1710,20 @@ body {
     margin-right: 20px;
   }
 
+  .container-metho {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
   .container-map {
     margin: 0 auto;
     position: relative;
@@ -1756,6 +1782,7 @@ a.btn {
 
 .bg-nav {
   background-color: #FFFFFF;
+  border-bottom: 2px solid #1112;
 }
 
 .backgroud-clases {
