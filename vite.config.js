@@ -12,7 +12,8 @@ module.exports = defineConfig({
         espagnol: 'espagnol.html',
         francais: 'francais.html',
         anglais: 'anglais.html',
-        traduccion: 'traduccion.html'
+        traduccion: 'traduccion.html',
+        methodologie: 'methodologie.html'
       }
     }
   }
