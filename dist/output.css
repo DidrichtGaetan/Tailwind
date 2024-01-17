@@ -646,6 +646,10 @@ video {
   margin-left: 2rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -1971,6 +1975,15 @@ nav ul .submenu li a{
   }
 }
 
+.original-price {
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+.pricing-container {
+  display: flex;
+}
+
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -2234,6 +2247,12 @@ nav ul .submenu li a{
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:border-0 {
     border-width: 0px;
   }
@@ -2342,6 +2361,7 @@ nav ul .submenu li a{
     display: inline;
   }
 }
+  
 
-
+  
 

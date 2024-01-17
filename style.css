@@ -558,5 +558,16 @@ nav ul .submenu li a{
     }
   }
 
+  .original-price {
+    display: inline-block;
+    text-decoration: line-through; 
+    
+  }
 
+  .pricing-container {
+    display: flex;
+  }
+  
+
+  
 
