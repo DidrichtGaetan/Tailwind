@@ -1470,14 +1470,14 @@ video {
 }
 
 .backgroud-acceuil {
-  background-image: url(ressources/laptop.jpg);
+  background-image: url(ressources/enhanced_image.jpg);
   width: 100%;
-  background-position: 10% 50%;
+  background-position: 10% 55%;
   background-size: cover;
 }
 
 .backgroud-offre {
-  background-image: url(ressources/groupe.jpg);
+  background-image: url(ressources/groupe2.jpg);
   width: 100%;
   background-position: 10% 20%;
   background-size: cover;
