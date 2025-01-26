@@ -34,11 +34,11 @@
 
 
 .backgroud-acceuil {
-    background-image: url(ressources/enhanced_image.jpg);
+    position: relative;
     width: 100%;
-    background-position: 10% 55%;
-    background-size: cover;
-}
+    height: 180vh; /* La vidéo occupe toute la hauteur de l'écran */
+  }
+  
 
 .backgroud-offre {
     background-image: url(ressources/groupe2.jpg);
