@@ -36,7 +36,13 @@
 .backgroud-acceuil {
     position: relative;
     width: 100%;
-    height: 180vh; /* La vidéo occupe toute la hauteur de l'écran */
+    height: 180vh;
+  }
+
+  
+  .myVideo {
+    min-width: 50%;
+    min-height: 50%;
   }
   
 
