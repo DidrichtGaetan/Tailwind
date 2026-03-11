@@ -1,6 +1,11 @@
-const menuElementsToToggle = document.querySelectorAll(".toggle-menu");
-const iconeToggle = document.querySelector(".icone-toggle");
+// Menu mobile - garde contre le double-listener
+(function () {
+    const btn = document.querySelector(".icone-toggle");
+    if (!btn || btn.dataset.bound) return;
+    btn.dataset.bound = "true";
 
-const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle("hidden"));
-
-iconeToggle.addEventListener("click", toggleMenu);
+    const menus = document.querySelectorAll(".toggle-menu");
+    btn.addEventListener("click", function () {
+        menus.forEach(function (el) { el.classList.toggle("hidden"); });
+    });
+})();
