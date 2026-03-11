@@ -1,260 +1,255 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-     Tu viaje linguistico
-    </title>
-    <meta
-      name="description"
-      content=""
-    />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="ressources/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" crossorigin href="/assets/style-wi9cHeLe.css">
-  </head>
-  <body>
+﻿<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
 
-    <section class="relative backgroud-clases">
-      <!-- Navbar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>En Grupo - Tu Viaje LingÃ¼Ã­stico</title>
+  <meta name="description"
+    content="Clases de idiomas en grupos reducidos. Aprende con otros estudiantes en Tu Viaje LingÃ¼Ã­stico." />
 
-      <nav class="fixed top-0 z-20 grid w-full grid-cols-none p-4 shadow-md md:h-28 md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent bg-nav">
+  <!-- Favicon -->
+  <link rel="icon" href="ressources/favicon.ico" type="image/x-icon" />
 
-        <div class="flex items-center justify-between md:justify-center md:inline md:absolute md:left-0 ">
-          <a href="#accueil" class="hidden md:block">
-            <img 
-              src="/assets/logocoupe-B8a5T7ML.png" 
-              alt="logo" 
-              class="ml-4 logo-menu"
-            >
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("nb5E1jgu2rp7d0jUF");
+    })();
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-base antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
+    id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="hidden md:flex flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <img class="h-12 w-auto" src="ressources/logocoupe.png" alt="Tu Viaje LingÃ¼Ã­stico">
+            <span class="font-title-rubrique text-xl text-main-yellow hidden sm:block">Tu Viaje LingÃ¼Ã­stico</span>
           </a>
-          <button class="p-2 bg-white rounded-md icone-toggle ring-1 ring-black ring-opacity-20 md:hidden md:space-x-10">
-            <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z'/%3e%3c/g%3e%3c/g%3e%3cg%3e%3cg%3e%3cpath%20d='M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z'/%3e%3c/g%3e%3c/g%3e%3cg%3e%3cg%3e%3cpath%20d='M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20%20C512,404.954,503.046,396,492,396z'/%3e%3c/g%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e" alt="icône hamburger" class="w-6 h-6">
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="index.html"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Inicio</a>
+          <a href="index.html#alicia"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Â¿QuiÃ©n
+            somos?</a>
+
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button
+              class="text-gray-700 group-hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium inline-flex items-center transition-colors font-title-rubrique uppercase tracking-wide">
+              <span>Ofrecemos</span>
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out origin-top-right">
+              <div class="py-1" role="menu" aria-orientation="vertical">
+                <a href="clasesParticulares.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">Clases particulares</a>
+                <a href="enGrupoReducido.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">En grupo</a>
+                <a href="enEmpresas.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">En empresas</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="methodologie.html"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">MetodologÃ­a</a>
+          <a href="index.html#Horario"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Horarios</a>
+          <a href="index.html#contact"
+            class="bg-main-yellow text-white hover:bg-dark-yellow px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-bold">Contacto</a>
+
+          <!-- Language Selector -->
+          <div class="flex items-center gap-2">
+            <a href="enGrupoReducido.html" class="font-bold text-main-yellow" title="EspaÃ±ol">ES</a>
+            <span class="text-gray-300">|</span>
+            <a href="enGrupoReducido_fr.html" class="font-bold text-gray-400 hover:text-main-yellow transition-colors"
+              title="FranÃ§ais">FR</a>
+          </div>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="flex items-center md:hidden ml-auto">
+          <button type="button"
+            class="icone-toggle inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-main-yellow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main-yellow"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars text-2xl"></i>
           </button>
         </div>
-        
-      
-        <ul class="flex-col hidden px-1 pt-6 toggle-menu md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
-        
-          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-            <a 
-            href="index.html"
-            class="text-lg font-medium text-color-a hover:text-gray-900"
-            >Inició</a>
-          </li>
-      
-          <li class="py-2 text-center border-t border-gray-200 md:border-0">
-            <a 
-            href="index.html#¿qui-somme-nous?"
-            class="text-lg font-medium text-color-a hover:text-gray-900"
-            >¿ Quién somos ?</a>
-          </li>
-      
-          <li id="menu-ofrecemos" class="py-2 text-center border-t border-gray-200 md:border-0">
-            <a class="text-lg font-medium text-color-a hover:text-gray-900">Ofrecemos</a>
-            <ul class="hidden submenu md:block">
-                <li class="pt-6"><a href="clasesParticulares.html">Clases particulares</a></li>
-                <li class="pt-6"><a href="enGrupoReducido.html">En grupo</a></li>
-                <li class="pt-6"><a href="enEmpresas.html">En empresas</a></li>
-            </ul>
-        </li>
-      
-          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-            <a 
-            href="index.html#Tarifas"
-            class="text-lg font-medium text-color-a hover:text-gray-900"
-            >Tarifas</a>
-          </li>
-          
-          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-            <a 
-            href="index.html#contact"
-            class="text-lg font-medium text-color-a hover:text-gray-900"
-            >Contacto</a>
-          </li>
+      </div>
+    </div>
 
-          <li class="py-2 text-center border-t border-b border-gray-200 md:border-0">
-              <a 
-              href="index.html#horaire"
-              class="text-lg font-medium text-color-a hover:text-gray-900"
-              >Horarios</a>
-          </li>
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white border-t border-gray-100 toggle-menu" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+        <a href="index.html"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Inicio</a>
+        <a href="index.html#alicia"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Â¿QuiÃ©n
+          somos?</a>
+        <a href="index.html#nos-offres"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Ofrecemos</a>
+        <a href="methodologie.html"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">MetodologÃ­a</a>
+        <a href="index.html#Tarifas"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Tarifas</a>
+        <a href="index.html#contact"
+          class="text-main-yellow font-bold block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
 
-      </ul>
-      </nav>
-     
-    </section>
-    
-    <body>
-        <div class="container-c">
-          <div class="md:w-full md:pr-3">
-            <h1 class="mb-2 text-3xl font-bold color-title-card title-font">En grupo</h1>
-            <h4 class="mb-4 text-xl title-font">¿ Quieres aprender en grupo ?</h4>
-            <p class="mb-10">Descubra nuestro aprendizaje colaborativo en grupo, que combina diversidad e intercambio. Afronten juntos el reto lingüístico, crezcan y creen vínculos memorables. 
-              Transforme su experiencia lingüística con nosotros.</p>
-              <a href="index.html#contact" class="w-full px-4 py-2 mt-8 mb-10 text-base font-semibold text-center text-white bg-gray-800 border border-gray-500 rounded-md background-or hover:bg-gray-900">
-                Pide tu curso 🔥
+        <!-- Mobile Language Selector -->
+        <div class="mt-4 pt-4 border-t border-gray-100 flex justify-center gap-4">
+          <a href="enGrupoReducido.html" class="font-bold text-main-yellow text-lg">ES</a>
+          <span class="text-gray-300">|</span>
+          <a href="enGrupoReducido_fr.html"
+            class="font-bold text-gray-400 hover:text-main-yellow transition-colors text-lg">FR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Section -->
+  <section class="bg-gray-50 min-h-screen" style="padding-top: 130px; padding-bottom: 80px;">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- Title -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="text-main-yellow font-title-rubrique text-xl tracking-wider uppercase mb-2 block">Modalidad</span>
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-800 font-title-rubrique mb-6">En Grupo</h1>
+          <div class="w-24 h-1 bg-main-yellow mx-auto rounded-full"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-20 items-center">
+          <!-- Content -->
+          <div class="lg:w-1/2" data-aos="fade-right">
+            <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+              <h2 class="text-2xl font-bold font-title-rubrique text-gray-800 mb-4">Â¿Quieres aprender en grupo?</h2>
+              <p class="text-lg text-gray-600 font-texte leading-relaxed mb-6">
+                Descubra nuestro aprendizaje colaborativo en grupo, que combina diversidad e intercambio.
+              </p>
+              <p class="text-lg text-gray-600 font-texte leading-relaxed mb-8">
+                Afronten juntos el reto lingÃ¼Ã­stico, crezcan y creen vÃ­nculos memorables.
+                Transforme su experiencia lingÃ¼Ã­stica con nosotros.
+              </p>
+              <a href="index.html#contact"
+                class="inline-block w-full text-center bg-main-yellow text-white hover:bg-dark-yellow px-8 py-4 rounded-xl text-lg font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                Â¡Reserva tu plaza! ðŸ”¥
+              </a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="lg:w-1/2" data-aos="fade-left">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+              <div
+                class="absolute inset-0 bg-main-yellow/20 group-hover:bg-transparent transition-colors duration-500 z-10">
+              </div>
+              <img src="ressources/en grupo.jpg" alt="Clases en Grupo"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-12 border-t-4 border-main-yellow">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <!-- Contact Info -->
+        <div class="text-center md:text-left space-y-4">
+          <h3 class="text-2xl font-bold font-title-rubrique text-main-yellow">Tu Viaje LingÃ¼Ã­stico</h3>
+          <div class="space-y-2 text-gray-300">
+            <p><i class="fa-solid fa-location-dot mr-2 text-main-yellow"></i> Avenida Francisco TÃ rrega 80, 12540
+              Vila-real, CastellÃ³n</p>
+            <p><i class="fa-solid fa-phone mr-2 text-main-yellow"></i> <a href="tel:+34641428140"
+                class="hover:text-white transition-colors">641 428 140</a></p>
+            <p><i class="fa-solid fa-envelope mr-2 text-main-yellow"></i> <a href="mailto:Tuviajelinguistico@gmail.com"
+                class="hover:text-white transition-colors">Tuviajelinguistico@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Social & Links -->
+        <div class="text-center md:text-right space-y-4">
+          <div class="flex justify-center md:justify-end gap-6">
+            <a href="https://www.facebook.com/Tuviajelinguistico" target="_blank"
+              class="bg-gray-800 hover:bg-main-yellow text-white hover:text-gray-900 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fa-brands fa-facebook-f"></i>
             </a>
-          </div> 
-          
-          <img class="img-c" src="/assets/en%20grupo-Cg3URKkF.jpg" alt="">
-        </div>
-    </body>
-
-      <!-- Footer -->
-
-      <footer class="footer">
-        <div class="max-w-5xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div class="flex justify-center text-teal-600">
-            <h3 class="pb-5 text-3xl text-center text-white title-font">Encuéntrenos aquí</h3>
+            <a href="https://www.instagram.com/tuviajelinguistico/" target="_blank"
+              class="bg-gray-800 hover:bg-main-yellow text-white hover:text-gray-900 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
-  
-          
-          <div class="text-center sm:text-center">
-            
-            <ul class="mt-8 space-y-4 text-sm">
-              <li>
-                <a
-                  class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                  href="#contact"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="text-gray-700 w-7 h-7 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-  
-                  <span class="ml-2 text-lg text-gray-700 sm:ml-4 sm:text-xl">Tuviajelinguistico@gmail.com</span>
-                </a>
-              </li>
-              
-              <li>
-                <a
-                  class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                  href="tel:+641428140"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="text-gray-700 w-7 h-7 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-  
-                  <span class="ml-2 text-lg text-gray-700 sm:ml-4 sm:text-xl">641 428 140</span>
-                </a>
-              </li>
-  
-              <li
-                class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-              >
-                
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="text-gray-700 w-7 h-7 shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-             
-                <span class="ml-2 text-lg text-gray-700 sm:ml-4 sm:text-xl">Avenida Francisco Tàrrega 80, 12540 Villareal </span>
-  
-              </li>
-            </ul>
+          <p class="text-sm text-gray-500">
+            &copy; 2024 Tu Viaje LingÃ¼Ã­stico. Todos los derechos reservados.
+          </p>
+          <div class="flex justify-center md:justify-end gap-4 text-xs text-gray-600">
+            <a href="#" class="hover:text-gray-400 transition-colors">Aviso Legal</a>
+            <a href="#" class="hover:text-gray-400 transition-colors">Privacidad</a>
+            <a href="#" class="hover:text-gray-400 transition-colors">Cookies</a>
           </div>
-  
-          <hr class="w-1/2 mx-auto mt-8"/>
-  
-          <ul class="flex flex-wrap justify-center gap-6 mt-8 md:gap-8 lg:gap-12 ">
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#accueil"> Inició </a>
-            </li>
-  
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#¿qui-somme-nous?"> ¿ Quién somos ? </a>
-            </li>
-  
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#nos-offres"> Ofrecemos </a>
-            </li>
-  
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#Tarifas"> Tarifas </a>
-            </li>
-  
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#horaire"> Horarios </a>
-            </li>
-  
-            <li>
-              <a class="text-lg text-white transition sm:texte-xl hover:text-gray-700/75 sm:text-xl" href="index.html#contact"> Contacto </a>
-            </li>
-          </ul>
-  
-          <hr class="w-1/2 mx-auto mt-8"/>
-          
-          <ul class="flex justify-center gap-6 mt-8 md:gap-12">
-            <li>
-              <a href="https://www.facebook.com/Tuviajelinguistico">
-                <img src="data:image/svg+xml,%3csvg%20aria-hidden='true'%20focusable='false'%20data-prefix='fab'%20data-icon='facebook'%20class='svg-inline--fa%20fa-facebook%20fa-w-16'%20role='img'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='white'%20d='M504%20256C504%20119%20393%208%20256%208S8%20119%208%20256c0%20123.78%2090.69%20226.38%20209.25%20245V327.69h-63V256h63v-54.64c0-62.15%2037-96.48%2093.67-96.48%2027.14%200%2055.52%204.84%2055.52%204.84v61h-31.28c-30.8%200-40.41%2019.12-40.41%2038.73V256h68.78l-11%2071.69h-57.78V501C413.31%20482.38%20504%20379.78%20504%20256z'%3e%3c/path%3e%3c/svg%3e" alt="icône fb" target="_blank" class="w-8 button-hover">
-              </a>
-                
-            </li>
-  
-            <li>
-              <a href="https://www.instagram.com/tuviajelinguistico/">
-                <img src="data:image/svg+xml,%3csvg%20aria-hidden='true'%20focusable='false'%20data-prefix='fab'%20data-icon='instagram'%20class='svg-inline--fa%20fa-instagram%20fa-w-14'%20role='img'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20448%20512'%3e%3cpath%20fill='white'%20d='M224.1%20141c-63.6%200-114.9%2051.3-114.9%20114.9s51.3%20114.9%20114.9%20114.9S339%20319.5%20339%20255.9%20287.7%20141%20224.1%20141zm0%20189.6c-41.1%200-74.7-33.5-74.7-74.7s33.5-74.7%2074.7-74.7%2074.7%2033.5%2074.7%2074.7-33.6%2074.7-74.7%2074.7zm146.4-194.3c0%2014.9-12%2026.8-26.8%2026.8-14.9%200-26.8-12-26.8-26.8s12-26.8%2026.8-26.8%2026.8%2012%2026.8%2026.8zm76.1%2027.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9%200-35.8%201.7-67.6%209.9-93.9%2036.1s-34.4%2058-36.2%2093.9c-2.1%2037-2.1%20147.9%200%20184.9%201.7%2035.9%209.9%2067.7%2036.2%2093.9s58%2034.4%2093.9%2036.2c37%202.1%20147.9%202.1%20184.9%200%2035.9-1.7%2067.7-9.9%2093.9-36.2%2026.2-26.2%2034.4-58%2036.2-93.9%202.1-37%202.1-147.8%200-184.8zM398.8%20388c-7.8%2019.6-22.9%2034.7-42.6%2042.6-29.5%2011.7-99.5%209-132.1%209s-102.7%202.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7%209-132.1c7.8-19.6%2022.9-34.7%2042.6-42.6%2029.5-11.7%2099.5-9%20132.1-9s102.7-2.6%20132.1%209c19.6%207.8%2034.7%2022.9%2042.6%2042.6%2011.7%2029.5%209%2099.5%209%20132.1s2.7%20102.7-9%20132.1z'%3e%3c/path%3e%3c/svg%3e" alt="icône fb" target="_blank" class="w-8 button-hover">
-              </a>
-            </li>
-          </ul>
         </div>
-      </footer>
-   
-    <script> 
-      const menuElementsToToggle = document.querySelectorAll(".toggle-menu");
-      const iconeToggle = document.querySelector(".icone-toggle");
-  
-      const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle("hidden"));
-  
-      iconeToggle.addEventListener("click", toggleMenu);
-    </script>
-   
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+
+
+
+    // Navbar Transition
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        if (window.scrollY > 10) {
+          navbar.classList.add('shadow-md');
+        } else {
+          navbar.classList.remove('shadow-md');
+        }
+      }
+    });
+  </script>
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>

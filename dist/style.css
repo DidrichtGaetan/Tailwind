@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts Imports */
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap');
+
+
+/* Global Resets */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: theme('colors.bg-color');
+    font-family: theme('fontFamily.base');
+}
+
+/* Custom Components & Utilities */
+/* Note: Many of these should eventually be moved to HTML classes or React components */
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo-navbar a {
+    display: flex;
+    align-items: center;
+}
+
+/* Custom Backgrounds - Hard to replace purely with utilities if images are local */
+.backgroud-about {
+    background-color: theme('colors.lite-yellow');
+    /* Using theme color */
+}
+
+.backgroud-acceuil {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Changed from 180vh to 100vh for standard hero */
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.backgroud-offre {
+    background-image: url(ressources/groupe2.jpg);
+    background-position: 10% 20%;
+    background-size: cover;
+}
+
+.backgroud-offre-lite {
+    /* Kept as is, complex gradient */
+    background-image: repeating-linear-gradient(135deg, rgba(79, 79, 79, 0.01) 0px, rgba(79, 79, 79, 0.01) 14px, rgba(94, 94, 94, 0.01) 14px, rgba(94, 94, 94, 0.01) 28px, rgba(109, 109, 109, 0.01) 28px, rgba(109, 109, 109, 0.01) 42px, rgba(124, 124, 124, 0.01) 42px, rgba(124, 124, 124, 0.01) 56px, rgba(139, 139, 139, 0.01) 56px, rgba(139, 139, 139, 0.01) 70px, rgba(154, 154, 154, 0.01) 70px, rgba(154, 154, 154, 0.01) 84px, rgba(169, 169, 169, 0.01) 84px, rgba(169, 169, 169, 0.01) 98px, rgba(184, 184, 184, 0.01) 98px, rgba(184, 184, 184, 0.01) 112px), repeating-linear-gradient(45deg, rgba(221, 221, 221, 0.01) 0px, rgba(221, 221, 221, 0.01) 14px, rgba(207, 207, 207, 0.01) 14px, rgba(207, 207, 207, 0.01) 28px, rgba(192, 192, 192, 0.01) 28px, rgba(192, 192, 192, 0.01) 42px, rgba(178, 178, 178, 0.01) 42px, rgba(178, 178, 178, 0.01) 56px, rgba(164, 164, 164, 0.01) 56px, rgba(164, 164, 164, 0.01) 70px, rgba(150, 150, 150, 0.01) 70px, rgba(150, 150, 150, 0.01) 84px, rgba(135, 135, 135, 0.01) 84px, rgba(135, 135, 135, 0.01) 98px, rgba(121, 121, 121, 0.01) 98px, rgba(121, 121, 121, 0.01) 112px), linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+.section-contact {
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
+    padding-bottom: 500px;
+}
+
+.footer {
+    background-color: theme('colors.main-yellow');
+}
+
+.custom-margin {
+    margin-bottom: 200px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 1;
+}
+
+/* Submenu Logic - Keeping this for now, though it could be done with Alpine.js or vanilla JS + Tailwind classes */
+nav ul .submenu {
+    position: absolute;
+    width: 300px;
+    background-color: theme('colors.nav-white');
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    /* Fixed unit */
+}
+
+nav ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+nav ul .submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul .submenu li a {
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#menu-ofrecemos:hover .submenu {
+    display: block;
+    visibility: visible;
+    margin: 0;
+}
+
+/* Hover effects */
+.button-hover {
+    transition: transform 0.3s ease;
+}
+
+.card-hover {
+    transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3);
+}
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Swiper Equal Height Fix */
+    /* Swiper Equal Height Fix */
+    .swiper-wrapper {
+        display: flex !important;
+        align-items: stretch !important;
+    }
+
+    .swiper-slide {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .swiper-slide>div {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+
+    /* Swiper Pagination Customization */
+    .swiper-pagination {
+        position: relative !important;
+        bottom: auto !important;
+        margin-top: 6rem !important;
+        padding-top: 1rem !important;
+        text-align: center !important;
+        width: 100% !important;
+        /* Global Swiper Color Overrides */
+        --swiper-pagination-color: theme('colors.main-yellow');
+        --swiper-theme-color: theme('colors.main-yellow');
+    }
+
+    .swiper-pagination-bullet {
+        width: 16px !important;
+        height: 16px !important;
+        background-color: theme('colors.gray-300') !important;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+        margin: 0 10px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: theme('colors.main-yellow') !important;
+        opacity: 1 !important;
+        width: 18px !important;
+        height: 18px !important;
+        transform: scale(1.1);
+    }
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 15px rgba(170, 167, 167, 0.3);
+}
+
+.divider-bg {
+    background-image: repeating-linear-gradient(45deg,
+            rgba(203, 178, 106, 0.005),
+            rgba(203, 178, 106, 0.1),
+            rgba(203, 178, 106, 0.03),
+            rgba(203, 178, 106, 0.005),
+            rgba(203, 178, 106, 0),
+            rgba(203, 178, 106, 0.3),
+            rgba(203, 178, 106, 0.1),
+            rgba(203, 178, 106, 0.3),
+            rgba(203, 178, 106, 0.03),
+            transparent,
+            rgba(203, 178, 106, 0.08),
+            rgba(203, 178, 106, 0),
+            rgba(203, 178, 106, 0.08) 4px),
+        linear-gradient(90deg, rgba(203, 178, 106), rgba(184, 157, 69));
+}
+
+/* Force time slots to stay on one line */
+td.whitespace-nowrap {
+    white-space: nowrap !important;
+    display: table-cell;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-contact {
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+        padding-bottom: 400px;
+    }
+}

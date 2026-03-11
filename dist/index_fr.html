@@ -1,0 +1,1201 @@
+﻿<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Viaje Lingüístico - Académie de langues à Villarreal</title>
+  <meta name="description"
+    content="Académie de langues à Villarreal. Cours de français, anglais et espagnol. Cours particuliers, en groupe et pour entreprises." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="ressources/favicon.ico" type="image/x-icon" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("nb5E1jgu2rp7d0jUF");
+    })();
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-baseantialiased">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
+    id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="hidden md:flex flex-shrink-0 flex items-center">
+          <a href="#accueil" class="flex items-center gap-2">
+            <img class="h-12 w-auto" src="ressources/logocoupe.png" alt="Tu Viaje Lingüístico">
+            <span class="font-title-rubrique text-xl text-main-yellow hidden sm:block">Tu Viaje Lingüístico</span>
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="#"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Accueil</a>
+          <a href="#alicia"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Qui
+            sommes-nous ?</a>
+
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button
+              class="text-gray-700 group-hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium inline-flex items-center transition-colors font-title-rubrique uppercase tracking-wide">
+              <span>Nos Offres</span>
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out origin-top-right">
+              <div class="py-1" role="menu" aria-orientation="vertical">
+                <a href="clasesParticulares_fr.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">Cours particuliers</a>
+                <a href="enGrupoReducido_fr.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">En groupe</a>
+                <a href="enEmpresas_fr.html"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-lite-yellow hover:text-main-yellow"
+                  role="menuitem">En entreprise</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="methodologie_fr.html"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Méthodologie</a>
+          <a href="#Horario"
+            class="text-gray-700 hover:text-main-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors font-title-rubrique uppercase tracking-wide">Horaires</a>
+          <a href="#contact"
+            class="bg-main-yellow text-white hover:bg-dark-yellow px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-bold">Contact</a>
+
+          <!-- Language Selector -->
+          <div class="flex items-center gap-2">
+            <a href="index.html" class="font-bold text-gray-400 hover:text-main-yellow transition-colors"
+              title="Español">ES</a>
+            <span class="text-gray-300">|</span>
+            <a href="#" class="font-bold text-main-yellow" title="Français">FR</a>
+          </div>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="flex items-center md:hidden ml-auto">
+          <button type="button"
+            class="icone-toggle inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-main-yellow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main-yellow"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Ouvrir le menu</span>
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white border-t border-gray-100 toggle-menu" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+        <a href="#"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Accueil</a>
+        <a href="#alicia"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Qui
+          sommes-nous ?</a>
+        <a href="#nos-offres"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Nos
+          Offres</a>
+        <a href="methodologie.html"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Méthodologie</a>
+        <a href="#Tarifas"
+          class="text-gray-700 hover:text-main-yellow block px-3 py-2 rounded-md text-base font-medium font-title-rubrique">Tarifs</a>
+        <a href="#contact"
+          class="text-main-yellow font-bold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+        <!-- Mobile Language Selector -->
+        <div class="mt-4 pt-4 border-t border-gray-100 flex justify-center gap-4">
+          <a href="index.html" class="font-bold text-gray-400 hover:text-main-yellow transition-colors text-lg">ES</a>
+          <span class="text-gray-300">|</span>
+          <a href="index_fr.html" class="font-bold text-main-yellow text-lg">FR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="accueil"
+    class="relative min-h-[90vh] flex items-center bg-lite-yellow overflow-hidden mt-20 pt-32 lg:pt-0">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="text-left relative" data-aos="fade-right">
+          <!-- Decorative Background Blobs -->
+          <div class="absolute -top-20 -left-20 w-64 h-64 bg-main-yellow/10 rounded-full blur-3xl -z-10 animate-pulse">
+          </div>
+          <div class="absolute top-40 -right-20 w-48 h-48 bg-hero-mint/10 rounded-full blur-3xl -z-10"></div>
+
+          <h1 class="font-title-rubrique font-bold leading-tight mb-6">
+            <span
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-main-black pb-3 uppercase tracking-wider drop-shadow-sm">
+              Tu Viaje Lingüístico
+            </span>
+          </h1>
+
+          <!-- Decorative Divider -->
+          <div class="w-20 h-1.5 bg-gradient-to-r from-main-yellow to-dark-yellow rounded-full mb-10 shadow-sm"></div>
+
+          <div class="space-y-6 max-w-xl mb-12">
+            <p class="text-lg md:text-xl text-gray-600 font-texte leading-relaxed font-medium">
+              Vous avez des doutes ? Vous souhaitez réserver votre place ? <br class="hidden md:block" />
+              <span class="text-main-yellow font-bold">Écrivez-nous</span> et commencez votre voyage linguistique dès
+              aujourd'hui.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 mb-12">
+            <a href="#contact"
+              class="inline-flex items-center gap-4 bg-main-yellow text-white font-bold py-4 px-10 rounded-2xl shadow-lg hover:shadow-main-yellow/30 hover:scale-105 transition-all duration-300 transform active:scale-95">
+              <i class="fa-solid fa-paper-plane text-xl"></i>
+              <span class="text-lg uppercase tracking-wide">Contactez-nous</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative hidden lg:flex flex-col gap-6 items-center justify-center" data-aos="fade-left">
+          <!-- Top Horizontal Card (Video) -->
+          <div class="w-full xl:w-[750px] h-[350px] rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white">
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+              <source src="ressources/video1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Bottom Cards (Side-by-Side) -->
+          <div class="flex gap-6 w-full xl:w-[750px]">
+            <div class="flex-1 h-64 rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
+              <img src="ressources/en classe.jpeg" alt="Clase" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 h-64 rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
+              <img src="ressources/eleve.jpg" alt="Online" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <!-- Decorative Background Blur -->
+          <div
+            class="absolute w-[120%] h-[120%] bg-gradient-to-br from-[#4FF3C3]/10 to-transparent rounded-full blur-3xl -z-10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .hero-gradient-text {
+      background: linear-gradient(90deg, #4FF3C3 0%, #CCF98C 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+  <!-- About Section ("Qui sommes nous") -->
+  <section id="alicia" class="py-20 md:py-32 bg-lite-yellow relative overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="mx-auto max-w-4xl text-center mb-16" data-aos="fade-up">
+        <span class="text-main-yellow font-title-rubrique text-xl tracking-wider uppercase mb-2 block">Notre
+          Histoire</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 font-title-rubrique mb-6">Académie de langues à
+          Villarreal</h2>
+        <div class="w-24 h-1 bg-main-yellow mx-auto rounded-full mb-8"></div>
+        <p class="text-lg text-gray-600 font-texte leading-relaxed">
+          Tu Viaje Lingüístico est bien plus qu'une école de langues. Nous sommes vos compagnons de voyage dans le monde
+          fascinant des langues, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et besoins
+          spécifiques.
+        </p>
+        <p class="text-lg text-gray-600 font-texte leading-relaxed">
+          Notre mission est de vous emmener dans un voyage unique et gratifiant à travers les langues. Que vous rêviez
+          de communiquer couramment dans une nouvelle langue, que vous ayez besoin de vous préparer à un examen
+          officiel, que vous souhaitiez obtenir une certification reconnue internationalement, que vous cherchiez de
+          nouvelles opportunités professionnelles ou que vous ayez simplement besoin de cours particuliers, nous sommes
+          là pour vous soutenir à chaque étape.
+        </p>
+      </div>
+
+      <!-- Features Carousel -->
+      <div class="swiper mySwiper mb-20 px-4 pb-12">
+        <div class="swiper-wrapper">
+          <!-- Feature 1 -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="100">
+              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
+                <i class="fa-solid fa-user-graduate text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Approche Personnalisée</h3>
+              <p class="text-gray-600 font-texte">
+                Tu Viaje Lingüístico est bien plus qu'une école de langues. Nous sommes vos compagnons de voyage dans le
+                monde fascinant des langues, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et
+                besoins spécifiques.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="200">
+              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
+                <i class="fa-solid fa-shapes text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Variété de méthodes d'apprentissage
+              </h3>
+              <p class="text-gray-600 font-texte">
+                Nous offrons une large gamme d'options d'apprentissage. Vous pouvez choisir des cours particuliers dans
+                le
+                confort de votre maison, un environnement inspirant dans notre académie, des cours en ligne pour une
+                flexibilité maximale, ou même des programmes pour entreprises qui boosteront votre succès professionnel.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="300">
+              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
+                <i class="fa-solid fa-star text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Résultats Prouvés</h3>
+              <p class="text-gray-600 font-texte">
+                Au fil des années, nous avons aidé d'innombrables étudiants à atteindre leurs objectifs linguistiques et
+                à
+                ouvrir des portes vers de nouvelles opportunités dans leur vie. Un environnement d'apprentissage
+                inspirant.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 4 -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="300">
+              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
+                <i class="fa-solid fa-star text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Un environnement d'apprentissage
+                inspirant</h3>
+              <p class="text-gray-600 font-texte">
+                Notre académie est conçue pour vous offrir un environnement accueillant et motivant, où l'apprentissage
+                devient une expérience enrichissante et amusante.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 5 -->
+          <div class="swiper-slide h-auto">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="300">
+              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
+                <i class="fa-solid fa-star text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Engagement envers votre succès</h3>
+              <p class="text-gray-600 font-texte">
+                Nous ne vous fournissons pas seulement des connaissances, mais aussi le soutien et l'orientation dont
+                vous
+                avez besoin pour atteindre vos objectifs avec succès.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Profile Section -->
+      <!-- Profile Section with Inline Styles for Robustness -->
+      <style>
+        .profile-container {
+          position: relative;
+          display: block;
+          padding: 2rem;
+        }
+
+        @media (min-width: 768px) {
+          .profile-container {
+            padding: 3rem;
+          }
+        }
+
+        .profile-image-wrapper {
+          width: 100%;
+          float: none;
+          margin-right: 0;
+          margin-bottom: 2.5rem;
+          position: relative;
+          z-index: 10;
+        }
+
+        @media (min-width: 768px) {
+          .profile-image-wrapper {
+            width: 33.3333%;
+            float: left;
+            margin-right: 3rem;
+            margin-bottom: 1rem;
+          }
+        }
+
+        .profile-blob {
+          position: absolute;
+          top: 1rem;
+          left: -1rem;
+          width: 100%;
+          height: 100%;
+          background-color: #fef9c3;
+          /* yellow-100 */
+          border-radius: 3rem 1rem 3rem 1rem;
+          z-index: -1;
+          transform: rotate(-2deg);
+          transition: transform 0.5s ease;
+        }
+
+        .profile-image-wrapper:hover .profile-blob {
+          transform: rotate(1deg);
+        }
+
+        .profile-img-box {
+          position: relative;
+          overflow: hidden;
+          background-color: white;
+          border-radius: 3rem 1rem 3rem 1rem;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          transform: rotate(1deg);
+          transition: transform 0.5s ease;
+        }
+
+        .profile-image-wrapper:hover .profile-img-box {
+          transform: rotate(0deg);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .profile-img {
+          width: 100%;
+          height: auto;
+          display: block;
+          object-fit: cover;
+          aspect-ratio: 4/5;
+        }
+
+        .profile-title {
+          font-family: 'Gagalin', sans-serif;
+          letter-spacing: 0.05em;
+          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+        }
+
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+      </style>
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden max-w-6xl mx-auto" data-aos="zoom-in">
+        <div class="profile-container clearfix">
+          <!-- Image Section with Decor -->
+          <!-- Image Section with Decor -->
+          <div class="profile-image-wrapper group">
+            <!-- Blob/Decoration Background -->
+            <div class="profile-blob"></div>
+            <!-- Image with Organic Shape -->
+            <div class="profile-img-box">
+              <img src="ressources/alicia.jpg" alt="Alicia - Fondatrice" class="profile-img">
+            </div>
+          </div>
+
+          <div class="">
+            <span
+              class="text-main-yellow font-bold uppercase tracking-widest text-xs mb-3 block opacity-80">Fondatrice</span>
+            <!-- Polished Title with distinct font if available, falling back to style -->
+            <h3
+              class="text-3xl md:text-4xl font-bold text-main-yellow font-title-rubrique mb-8 leading-tight drop-shadow-sm transform -rotate-1 origin-left"
+              style="font-family: 'Gagalin', sans-serif; letter-spacing: 0.05em;">
+              QUI SUIS-JE ?
+            </h3>
+            <div class="space-y-5 text-gray-600 font-texte text-justify leading-relaxed">
+              <p class="">
+                <span class="font-bold text-gray-800">Je m'appelle Alicia</span> et je suis la créatrice du centre de
+                langues
+                <span class="text-main-yellow font-bold">Tu Viaje Lingüístico</span>.
+              </p>
+
+              <p>
+                Je suis belge. Née en Belgique, j'ai d'abord étudié les <strong>Relations Publiques</strong> puis la
+                <strong>philologie française</strong>. J'ai obtenu un master de professeur de français en Belgique en
+                2018.
+              </p>
+
+              <div class="bg-yellow-50 p-6 rounded-xl border border-yellow-100 my-6">
+                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                  <i class="fa-solid fa-graduation-cap text-main-yellow mr-2"></i> Mon Parcours
+                </h4>
+                <p class="mb-4">
+                  Grâce à mes études, j'ai eu la chance de faire des stages dans différentes écoles pour différents
+                  niveaux, parfois pour un public en difficulté d'apprentissage. De plus, j'ai enseigné le français
+                  comme langue étrangère (FLE) dans un centre de langues en Belgique.
+                </p>
+                <p>
+                  Je suis arrivée en Espagne en 2018 et j'ai d'abord travaillé comme assistante de langue, ce qui a
+                  confirmé ma vocation : <strong>l'enseignement est mon métier</strong>.
+                </p>
+              </div>
+
+              <div class="mt-8">
+                <div class="pl-4 border-l-4 border-main-yellow/30 my-6">
+                  <h4 class="font-bold text-gray-800 mb-2">ExpÃ©rience DiversifiÃ©e</h4>
+                  <p class="mb-2">J'ai travaillÃ© avec tout type de public en Belgique et en Espagne :</p>
+                  <ul class="grid grid-cols-2 gap-2 text-sm">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Enfants et
+                      CollÃ¨ge</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Adultes</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Personnes en
+                      situation de handicap</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Entreprises
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Toute cette expérience m'a permis d'enseigner avec une <strong>méthodologie différente pour chacun et
+                    selon son rythme</strong>. En même temps, j'essaie toujours d'apporter une dimension à la fois
+                  attrayante, ludique et agréable pour les intéresser.
+                </p>
+
+                <p class="italic text-gray-500 border-t border-gray-100 pt-4 mt-6">
+                  <i class="fa-solid fa-heart text-main-yellow mr-2"></i>
+                  "D'une part, être native et d'autre part, être passionnée par l'enseignement et les langues est ce qui
+                  me différencie et me permet d'apporter un enseignement de qualité et diversifié."
+                </p>
+              </div>
+              <div class="mt-8 clear-both">
+                <h4 class="font-bold text-gray-800 mb-6 text-xl md:text-2xl font-title-rubrique text-main-yellow">Mon
+                  Parcours</h4>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                  <!-- Card 1: En Entreprise -->
+                  <div
+                    class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-orange-100 p-4 text-center border-b border-orange-200">
+                      <div
+                        class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm text-orange-500 text-xl">
+                        <i class="fa-solid fa-building"></i>
+                      </div>
+                      <h3 class="text-lg font-bold text-gray-800 font-title-rubrique tracking-wide">EN ENTREPRISE</h3>
+                    </div>
+                    <div class="p-6">
+                      <ul class="space-y-3 font-texte text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs"></i>
+                          <span class="font-medium">Butech</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs"></i>
+                          <span class="font-medium">Ecoceramic</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs"></i>
+                          <span class="font-medium">The Size Surface SL</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs"></i>
+                          <span class="font-medium">Cifre Cerámicas</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs"></i>
+                          <span class="font-medium">Ingesom</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Card 2: Cours -->
+                  <div
+                    class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-green-100 p-4 text-center border-b border-green-200">
+                      <div
+                        class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm text-green-600 text-xl">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                      </div>
+                      <h3 class="text-lg font-bold text-gray-800 font-title-rubrique tracking-wide">COURS</h3>
+                    </div>
+                    <div class="p-6">
+                      <ul class="space-y-4 font-texte text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Auxiliaire à <strong>Broch I Llop</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Cours particuliers <strong>(tous âges)</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Centre de langues à <strong>Bruges</strong></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Card 3: Autres -->
+                  <div
+                    class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-blue-100 p-4 text-center border-b border-blue-200">
+                      <div
+                        class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm text-blue-500 text-xl">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <h3 class="text-lg font-bold text-gray-800 font-title-rubrique tracking-wide">AUTRES</h3>
+                    </div>
+                    <div class="p-6">
+                      <ul class="space-y-4 font-texte text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Rel. Publiques <strong>Aéroport Liège</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Traductrice <strong>F. Segarra</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <i class="fa-solid fa-check text-main-yellow text-xs mt-1 flex-shrink-0"></i>
+                          <span>Admin. <strong>Keraben</strong></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <a href="#contact"
+                class="inline-flex items-center text-main-yellow font-bold hover:text-dark-yellow transition-colors">
+                Parlez avec Alicia <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Strip -->
+      <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mb-4 group-hover:bg-main-yellow group-hover:text-white transition-colors duration-300 text-main-yellow border-2 border-main-yellow">
+            <i class="fa-solid fa-phone text-2xl"></i>
+          </div>
+          <a href="tel:+641428140" class="text-lg font-bold text-gray-800 hover:text-main-yellow">641 428 140</a>
+        </div>
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mb-4 group-hover:bg-main-yellow group-hover:text-white transition-colors duration-300 text-main-yellow border-2 border-main-yellow">
+            <i class="fa-solid fa-envelope text-2xl"></i>
+          </div>
+          <a href="mailto:Tuviajelinguistico@gmail.com"
+            class="text-lg font-bold text-gray-800 hover:text-main-yellow">Tuviajelinguistico@gmail.com</a>
+        </div>
+        <div class="flex flex-col items-center group">
+          <div
+            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mb-4 group-hover:bg-main-yellow group-hover:text-white transition-colors duration-300 text-main-yellow border-2 border-main-yellow">
+            <i class="fa-solid fa-location-dot text-2xl"></i>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Francisco+Tàrrega+80,+Vila-real" target="_blank"
+            class="text-lg font-bold text-gray-800 hover:text-main-yellow">
+            Av. Francisco Tàrrega 80, Villarreal
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section id="nos-offres" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-main-yellow font-title-rubrique text-xl tracking-wider uppercase mb-2 block">Nos Cours</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 font-title-rubrique mb-6">Que proposons-nous ?</h2>
+        <p class="text-lg text-gray-600 font-texte max-w-3xl mx-auto">
+          Notre académie propose des cours de français, anglais et espagnol pour tous les niveaux, du débutant à avancé.
+          Que vous préfériez des cours en groupe, privés, en ligne ou en entreprise, notre académie de langues vous
+          offre une flexibilité totale. Nous croyons en une approche éducative dynamique qui favorise l'interaction et
+          l'immersion linguistique. Explorez plus en cliquant sur les différentes images.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1: Methodologie -->
+        <a href="methodologie_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/metodologia.jpg" alt="Méthodologie"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Notre Méthodologie</h3>
+            <p class="text-white text-sm opacity-90">Découvrez comment nous enseignons</p>
+          </div>
+        </a>
+
+        <!-- Card 2: Frances -->
+        <a href="francais_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/frances.jpg" alt="Cours de Français"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Français</h3>
+            <p class="text-white text-sm opacity-90">Apprenez la langue de Molière</p>
+          </div>
+        </a>
+
+        <!-- Card 3: Ingles -->
+        <a href="anglais_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/inglès.jpg" alt="Cours d'Anglais"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Anglais</h3>
+            <p class="text-white text-sm opacity-90">La langue universelle</p>
+          </div>
+        </a>
+
+        <!-- Card 4: Espanol -->
+        <a href="espagnol_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="300">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/espagnol.jpg" alt="Cours d'Espagnol"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Espagnol pour Étrangers</h3>
+            <p class="text-white text-sm opacity-90">Vivez la langue locale</p>
+          </div>
+        </a>
+
+        <!-- Card 5: Particulares -->
+        <a href="clasesParticulares_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="400">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/particulares.jpg" alt="Cours Particuliers"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Cours Particuliers</h3>
+            <p class="text-white text-sm opacity-90">Attention 100% personnalisée</p>
+          </div>
+        </a>
+
+        <!-- Card 6: Online -->
+        <a href="online_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="500">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/online.jpg" alt="Cours En Ligne"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Cours En Ligne</h3>
+            <p class="text-white text-sm opacity-90">Apprenez d'où vous voulez</p>
+          </div>
+        </a>
+
+        <!-- Card 7: Traduccion -->
+        <div
+          class="group relative overflow-hidden rounded-2xl shadow-lg transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="600">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/traduccion.jpg" alt="Traduction et Interprétation"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Traduction et Interprétation</h3>
+            <p class="text-white text-sm opacity-90">Services professionnels</p>
+          </div>
+        </div>
+
+        <!-- Card 8: En Grupo -->
+        <a href="enGrupoReducido_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="700">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/en grupo.jpg" alt="Cours en Groupe"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Cours en Groupe</h3>
+            <p class="text-white text-sm opacity-90">Apprenez avec d'autres</p>
+          </div>
+        </a>
+
+        <!-- Card 9: Empresas -->
+        <a href="enEmpresas_fr.html"
+          class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="800">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10"></div>
+          <img src="ressources/empresas.jpg" alt="Pour Entreprises"
+            class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+            <h3
+              class="text-2xl font-bold text-white font-title-rubrique mb-1 drop-shadow-md group-hover:text-main-yellow transition-colors">
+              Pour Entreprises</h3>
+            <p class="text-white text-sm opacity-90">Solutions corporatives</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 font-title-rubrique mb-16" data-aos="fade-up">
+        Ils nous font <span class="text-main-yellow">confiance</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="100">
+          <i
+            class="fa-solid fa-quote-right absolute top-4 right-6 text-6xl text-gray-50 group-hover:text-yellow-50 transition-colors duration-300 pointer-events-none"></i>
+          <div class="relative z-10 flex items-center gap-4 mb-6">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-main-yellow rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity">
+              </div>
+              <img src="ressources/icone-profil.jpg" alt="User"
+                class="w-14 h-14 rounded-full object-cover relative border-2 border-white shadow-sm">
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Belen Nogués</h4>
+              <div class="flex text-main-yellow text-xs gap-0.5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="relative z-10 text-gray-600 italic leading-relaxed">
+            "Alicia est une personne merveilleuse et une professeure exceptionnelle !!! Je
+            suis extrêmement reconnaissante pour tout son soutien. Nous avons atteint un niveau que je n'imaginais pas."
+          </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="200">
+          <i
+            class="fa-solid fa-quote-right absolute top-4 right-6 text-6xl text-gray-50 group-hover:text-yellow-50 transition-colors duration-300 pointer-events-none"></i>
+          <div class="relative z-10 flex items-center gap-4 mb-6">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-main-yellow rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity">
+              </div>
+              <img src="ressources/maryse.jpg" alt="User"
+                class="w-14 h-14 rounded-full object-cover relative border-2 border-white shadow-sm">
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Maryse Didricht</h4>
+              <div class="flex text-main-yellow text-xs gap-0.5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="relative z-10 text-gray-600 italic leading-relaxed">
+            "Alicia m’a beaucoup aidé, elle est allée à l’essentiel, ses cours sont
+            interactifs. Merci Alicia, grâce à toi j’ai pu me faire comprendre."
+          </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="300">
+          <i
+            class="fa-solid fa-quote-right absolute top-4 right-6 text-6xl text-gray-50 group-hover:text-yellow-50 transition-colors duration-300 pointer-events-none"></i>
+          <div class="relative z-10 flex items-center gap-4 mb-6">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-main-yellow rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity">
+              </div>
+              <img src="ressources/icone-profil.jpg" alt="User"
+                class="w-14 h-14 rounded-full object-cover relative border-2 border-white shadow-sm">
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Lola Gomez</h4>
+              <div class="flex text-main-yellow text-xs gap-0.5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="relative z-10 text-gray-600 italic leading-relaxed">
+            "Ma fille a commencé le voyage linguistique ici à l'académie, elle y va très
+            contente et elle adore. Nous recommandons cette académie, c'est un 10 !"
+          </p>
+        </div>
+      </div>
+
+      <!-- Happy Faces Gallery -->
+      <div class="mt-20 text-center" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-gray-800 font-title-rubrique mb-10">Nos <span
+            class="text-main-yellow">visages heureux</span></h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-main-yellow/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="w-full h-80 md:h-[400px] rounded-3xl shadow-md relative border-4 border-white overflow-hidden">
+              <img src="ressources/enfants1.jpeg" alt="Étudiant"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+          </div>
+          <div class="relative group mt-8 md:mt-0">
+            <div
+              class="absolute -inset-2 bg-hero-mint/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="w-full h-80 md:h-[400px] rounded-3xl shadow-md relative border-4 border-white overflow-hidden">
+              <div class="w-full h-full" style="transform: scale(1.6); transform-origin: center;">
+                <img src="ressources/enfants2.jpeg" alt="Étudiant"
+                  class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+              </div>
+            </div>
+          </div>
+          <div class="relative group mt-8 md:mt-0">
+            <div
+              class="absolute -inset-2 bg-orange-100 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="w-full h-80 md:h-[400px] rounded-3xl shadow-md relative border-4 border-white overflow-hidden">
+              <img src="ressources/enfants3.jpeg" alt="Étudiant"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Banner -->
+  <div class="bg-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-main-black font-title-rubrique mb-10 uppercase tracking-wide">
+        &#xa1;Suivez-nous sur les r&eacute;seaux !
+      </h2>
+      <div class="flex justify-center gap-8">
+        <a href="https://www.facebook.com/Tuviajelinguistico" target="_blank"
+          class="bg-main-yellow hover:bg-dark-yellow text-white w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
+          <i class="fa-brands fa-facebook-f text-2xl"></i>
+        </a>
+        <a href="https://www.instagram.com/tuviajelinguistico/" target="_blank"
+          class="bg-main-yellow hover:bg-dark-yellow text-white w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
+          <i class="fa-brands fa-instagram text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Schedule Section -->
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-2xl font-bold font-title-rubrique mb-6 text-main-yellow">Contactez-nous</h3>
+          <p class="text-gray-400 mb-8 max-w-md">
+            Vous avez des questions ? Vous voulez réserver votre place ? Écrivez-nous et commencez votre voyage
+            linguistique dès aujourd'hui.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <i class="fa-solid fa-location-dot mt-1 text-main-yellow"></i>
+              <span class="text-gray-300">Avenida Francisco Tàrrega 80,<br>12540 Vila-real, Castellón</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-phone text-main-yellow"></i>
+              <a href="tel:+34641428140" class="text-gray-300 hover:text-white transition-colors">641 428 140</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-envelope text-main-yellow"></i>
+              <a href="mailto:Tuviajelinguistico@gmail.com"
+                class="text-gray-300 hover:text-white transition-colors">Tuviajelinguistico@gmail.com</a>
+            </div>
+
+            <!-- Google Map -->
+            <div class="mt-6 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.8944444444444!2d-0.1013888!3d39.9366667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ffe4f4f4f4f4f%3A0x4f4f4f4f4f4f4f4f!2sAvenida%20Francisco%20T%C3%A0rrega%2C%2080%2C%2012540%20Vila-real%2C%20Castell%C3%B3n!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses&q=Avenida+Francisco+Tàrrega+80,+12540+Vila-real,+Castellón"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Form (Conceptual, needs backend/EmailJS config) -->
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-700">
+          <form onsubmit="sendMail(event)">
+            <div class="grid grid-cols-1 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Nom</label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
+                  placeholder="Votre nom">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
+                  placeholder="votre@email.com">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                <textarea id="message" rows="4"
+                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
+                  placeholder="En quoi pouvons-nous vous aider ?"></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-main-yellow hover:bg-dark-yellow text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-lg">
+                Envoyer le message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          &copy; 2024 Tu Viaje Lingüístico. Tous droits réservés.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-main-yellow text-sm transition-colors">Politique de
+            Confidentialité</a>
+          <a href="#" class="text-gray-400 hover:text-main-yellow text-sm transition-colors">Mentions Légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+
+    // Mobile menu toggle
+    const btn = document.querySelector('button.icone-toggle');
+    const menu = document.querySelector('.toggle-menu');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('shadow-md');
+        navbar.classList.replace('bg-white/90', 'bg-white/95');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navbar.classList.replace('bg-white/95', 'bg-white/90');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          // Close mobile menu if open
+          if (!menu.classList.contains('hidden')) {
+            menu.classList.add('hidden');
+          }
+
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+  <script>
+    function showNotification(message, type = 'success') {
+      const notification = document.createElement('div');
+
+      const isSuccess = type === 'success';
+      const title = isSuccess ? 'SUCCÈS !' : 'ERREUR !';
+      const iconClass = isSuccess ? 'fa-check-circle' : 'fa-exclamation-circle';
+
+      // Inline styles for colors to bypass missing Tailwind classes
+      // Green-100: #dcfce7, Green-800: #166534, Border-Green-500: #22c55e
+      // Red-100: #fee2e2, Red-800: #991b1b, Border-Red-500: #ef4444
+      const bgStyle = isSuccess ? 'background-color: #dcfce7; border: 1px solid #22c55e;' : 'background-color: #fee2e2; border: 1px solid #ef4444;';
+      const textStyle = isSuccess ? 'color: #166534;' : 'color: #991b1b;';
+      const iconStyle = isSuccess ? 'color: #16a34a;' : 'color: #dc2626;';
+
+      // Base classes for layout and animation
+      notification.className = `fixed top-24 md:top-32 right-4 z-50 flex items-start p-4 mb-4 rounded-lg shadow-lg transform transition-all duration-300 translate-x-full opacity-0 max-w-xs md:max-w-sm`;
+
+      // Apply inline styles
+      notification.style.cssText = `${bgStyle} ${textStyle}`;
+
+      notification.innerHTML = `
+        <div class="flex-shrink-0 mt-0.5">
+          <i class="fas ${iconClass} text-xl" style="${iconStyle}"></i>
+        </div>
+        <div class="ml-3 flex-1">
+          <h3 class="text-sm font-bold" style="${textStyle}">${title}</h3>
+          <p class="text-sm mt-1 mb-1" style="${textStyle}">${message}</p>
+        </div>
+        <button onclick="this.parentElement.remove()" class="ml-4 -mt-1 text-gray-500 hover:text-gray-700 focus:outline-none" style="${textStyle} opacity: 0.6;">
+          <i class="fas fa-times"></i>
+        </button>
+      `;
+
+      document.body.appendChild(notification);
+
+      // Animate in
+      requestAnimationFrame(() => {
+        notification.classList.remove('translate-x-full', 'opacity-0');
+      });
+
+      // Remove after 5 seconds
+      setTimeout(() => {
+        if (document.body.contains(notification)) {
+          notification.classList.add('translate-x-full', 'opacity-0');
+          setTimeout(() => {
+            if (document.body.contains(notification)) {
+              document.body.removeChild(notification);
+            }
+          }, 300);
+        }
+      }, 5000);
+    }
+
+    function sendMail(event) {
+      event.preventDefault();
+      const params = {
+        from_name: document.getElementById("name").value,
+        reply_to: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+      const serviceID = "service_705xmn9";
+      const templateID = "template_g6j6m2p";
+
+      // Show loading state
+      const btn = event.target.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerText = 'Envoi en cours...';
+      btn.disabled = true;
+      btn.classList.add('opacity-70', 'cursor-not-allowed');
+
+      emailjs.send(serviceID, templateID, params)
+        .then((res) => {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          showNotification("Message envoyé avec succès !", 'success');
+        })
+        .catch((err) => {
+          console.error(err);
+          showNotification("Une erreur s'est produite lors de l'envoi.", 'error');
+        })
+        .finally(() => {
+          btn.innerText = originalText;
+          btn.disabled = false;
+          btn.classList.remove('opacity-70', 'cursor-not-allowed');
+        });
+    }
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 4000, // 4 seconds
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
