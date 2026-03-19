@@ -136,191 +136,229 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="accueil"
-    class="relative min-h-[90vh] flex items-center bg-lite-yellow overflow-hidden mt-20 pt-32 lg:pt-0">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <!-- Text Content -->
-        <div class="text-left relative" data-aos="fade-right">
-          <!-- Decorative Background Blobs -->
-          <div class="absolute -top-20 -left-20 w-64 h-64 bg-main-yellow/10 rounded-full blur-3xl -z-10 animate-pulse">
-          </div>
-          <div class="absolute top-40 -right-20 w-48 h-48 bg-hero-mint/10 rounded-full blur-3xl -z-10"></div>
+  <section id="accueil" style="background: #FAF5E8; min-height: 100vh; display: flex; align-items: center; padding-top: 80px;">
 
-          <h1 class="font-title-rubrique font-bold leading-tight mb-6">
-            <span
-              class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-main-black pb-3 uppercase tracking-wider drop-shadow-sm">
-              Tu Viaje Lingüístico
-            </span>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8" style="padding-top: 2rem; padding-bottom: 2rem;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+        <!-- LEFT: Content -->
+        <div data-aos="fade-right">
+
+          <!-- Overline -->
+          <p style="color: #CBB26A; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem; font-family: inherit;">
+            Académie de Langues · Villarreal
+          </p>
+
+          <!-- Headline -->
+          <h1 class="font-title-rubrique" style="color: #0A1E2E; font-size: clamp(2.6rem, 4.5vw, 3.8rem); font-weight: 800; line-height: 1.08; margin-bottom: 1.5rem;">
+            VOTRE VOYAGE<br>
+            <span style="color: #CBB26A;">LINGUISTIQUE</span>
           </h1>
 
-          <!-- Decorative Divider -->
-          <div class="w-20 h-1.5 bg-gradient-to-r from-main-yellow to-dark-yellow rounded-full mb-10 shadow-sm"></div>
+          <!-- Gold underline accent -->
+          <div style="width: 52px; height: 3px; background: #CBB26A; border-radius: 2px; margin-bottom: 2rem;"></div>
 
-          <div class="space-y-6 max-w-xl mb-12">
-            <p class="text-lg md:text-xl text-gray-600 font-texte leading-relaxed font-medium">
-              Vous avez des doutes ? Vous souhaitez réserver votre place ? <br class="hidden md:block" />
-              <span class="text-main-yellow font-bold">Écrivez-nous</span> et commencez votre voyage linguistique dès
-              aujourd'hui.
-            </p>
-          </div>
+          <!-- Subtitle -->
+          <p style="color: #555; font-size: 1.1rem; line-height: 1.8; max-width: 400px; margin-bottom: 2.5rem;">
+            Apprenez le français, l'anglais ou l'espagnol avec une approche personnalisée, dynamique et orientée vers des résultats concrets.
+          </p>
 
-          <div class="flex flex-wrap items-center gap-4 mb-12">
+          <!-- Action buttons -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem;">
             <a href="#contact"
-              class="inline-flex items-center gap-4 bg-main-yellow text-white font-bold py-4 px-10 rounded-2xl shadow-lg hover:shadow-main-yellow/30 hover:scale-105 transition-all duration-300 transform active:scale-95">
-              <i class="fa-solid fa-paper-plane text-xl"></i>
-              <span class="text-lg uppercase tracking-wide">Contactez-nous</span>
+              style="display: inline-flex; align-items: center; gap: 0.6rem; background: #0A1E2E; color: #fff; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.04em; text-decoration: none; transition: transform 0.3s, box-shadow 0.3s;"
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(30,27,24,0.2)'"
+              onmouseout="this.style.transform=''; this.style.boxShadow=''">
+              <i class="fa-solid fa-paper-plane" style="font-size: 0.8rem;"></i> Commencer maintenant
+            </a>
+            <a href="#alicia"
+              style="display: inline-flex; align-items: center; gap: 0.5rem; color: rgba(30,27,24,0.55); padding: 0.9rem 1.5rem; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: color 0.3s, gap 0.3s;"
+              onmouseover="this.style.color='#0A1E2E'" onmouseout="this.style.color='rgba(30,27,24,0.55)'">
+              Qui sommes-nous ? <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i>
             </a>
           </div>
+
+          <!-- Stats bar -->
+          <div style="display: flex; gap: 0; padding-top: 2rem; border-top: 1px solid rgba(203,178,106,0.35);">
+            <div style="padding-right: 2rem;">
+              <div class="font-title-rubrique" style="font-size: 1.8rem; font-weight: 800; color: #0A1E2E; line-height: 1;">3</div>
+              <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.4); margin-top: 0.35rem;">Langues</div>
+            </div>
+            <div style="padding: 0 2rem; border-left: 1px solid rgba(203,178,106,0.35);">
+              <div class="font-title-rubrique" style="font-size: 1.8rem; font-weight: 800; color: #0A1E2E; line-height: 1;">100%</div>
+              <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.4); margin-top: 0.35rem;">Personnalisé</div>
+            </div>
+            <div style="padding-left: 2rem; border-left: 1px solid rgba(203,178,106,0.35);">
+              <div class="font-title-rubrique" style="font-size: 1.8rem; font-weight: 800; color: #0A1E2E; line-height: 1;">10+</div>
+              <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.4); margin-top: 0.35rem;">Ans d'expérience</div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="relative hidden lg:flex flex-col gap-6 items-center justify-center" data-aos="fade-left">
-          <!-- Top Horizontal Card (Video) -->
-          <div class="w-full xl:w-[750px] h-[350px] rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white">
-            <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+        <!-- RIGHT: Media — video top + 2 photos below -->
+        <div data-aos="fade-left" data-aos-delay="150">
+
+          <!-- VIDEO rectangle (16:9) -->
+          <div style="border-radius: 18px; overflow: hidden; position: relative; margin-bottom: 14px; box-shadow: 0 20px 50px rgba(30,27,24,0.15);">
+            <video style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" autoplay muted loop playsinline>
               <source src="ressources/video1.mp4" type="video/mp4">
             </video>
-          </div>
-
-          <!-- Bottom Cards (Side-by-Side) -->
-          <div class="flex gap-6 w-full xl:w-[750px]">
-            <div class="flex-1 h-64 rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
-              <img src="ressources/en classe.jpeg" alt="Clase" class="w-full h-full object-cover">
-            </div>
-            <div class="flex-1 h-64 rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
-              <img src="ressources/eleve.jpg" alt="Online" class="w-full h-full object-cover">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(30,27,24,0.4) 0%, transparent 50%); pointer-events: none;"></div>
+            <!-- Badge -->
+            <div style="position: absolute; bottom: 16px; left: 16px; display: flex; align-items: center; gap: 8px; background: rgba(10,8,4,0.68); backdrop-filter: blur(10px); padding: 7px 14px; border-radius: 50px;">
+              <span style="width: 7px; height: 7px; border-radius: 50%; background: #CBB26A; flex-shrink: 0;"></span>
+              <span class="font-title-rubrique" style="color: #fff; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">Notre méthode</span>
             </div>
           </div>
 
-          <!-- Decorative Background Blur -->
-          <div
-            class="absolute w-[120%] h-[120%] bg-gradient-to-br from-[#4FF3C3]/10 to-transparent rounded-full blur-3xl -z-10">
+          <!-- 2 PHOTOS carrées côte à côte -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+
+            <!-- Photo 1 -->
+            <div style="border-radius: 14px; overflow: hidden; position: relative; box-shadow: 0 12px 35px rgba(30,27,24,0.12); aspect-ratio: 1/1;">
+              <img src="ressources/en classe.jpeg" alt="En classe"
+                style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(30,27,24,0.55) 0%, transparent 55%); pointer-events: none;"></div>
+              <span class="font-title-rubrique" style="position: absolute; bottom: 10px; left: 12px; color: #fff; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em;">En classe</span>
+            </div>
+
+            <!-- Photo 2 -->
+            <div style="border-radius: 14px; overflow: hidden; position: relative; box-shadow: 0 12px 35px rgba(30,27,24,0.12); aspect-ratio: 1/1;">
+              <img src="ressources/eleve.jpg" alt="Mes élèves"
+                style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''">
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(30,27,24,0.55) 0%, transparent 55%); pointer-events: none;"></div>
+              <span class="font-title-rubrique" style="position: absolute; bottom: 10px; left: 12px; color: #fff; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em;">Mes élèves</span>
+            </div>
+
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
   <style>
-    .hero-gradient-text {
-      background: linear-gradient(90deg, #4FF3C3 0%, #CCF98C 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .swiper-btn-custom {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid rgba(203,178,106,0.35);
+      display: flex; align-items: center; justify-content: center;
+      color: #CBB26A;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+      flex-shrink: 0;
     }
+    .swiper-btn-custom:hover {
+      background: #CBB26A;
+      border-color: #CBB26A;
+      color: #0A1E2E;
+      transform: scale(1.08);
+    }
+    .feature-icon-box {
+      width: 48px; height: 48px;
+      background: rgba(203,178,106,0.12);
+      border: 1px solid rgba(203,178,106,0.3);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.15rem;
+      color: #CBB26A;
+      margin-bottom: 1.25rem;
+      transition: transform 0.3s ease;
+    }
+    .metodo-card:hover .feature-icon-box { transform: rotate(-6deg) scale(1.1); }
   </style>
 
-  <!-- About Section ("Qui sommes nous") -->
-  <section id="alicia" class="py-20 md:py-32 bg-lite-yellow relative overflow-hidden">
+  <section id="alicia" class="py-20 md:py-32 relative overflow-hidden" style="background: #FAF5E8;">
+    <div style="height: 2px; background: linear-gradient(90deg, transparent, #CBB26A, transparent); position: absolute; top: 0; left: 0; right: 0;"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="mx-auto max-w-4xl text-center mb-16" data-aos="fade-up">
-        <span class="text-main-yellow font-title-rubrique text-xl tracking-wider uppercase mb-2 block">Notre
-          Histoire</span>
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 font-title-rubrique mb-6">Académie de langues à
-          Villarreal</h2>
-        <div class="w-24 h-1 bg-main-yellow mx-auto rounded-full mb-8"></div>
-        <p class="text-lg text-gray-600 font-texte leading-relaxed">
-          Tu Viaje Lingüístico est bien plus qu'une école de langues. Nous sommes vos compagnons de voyage dans le monde
-          fascinant des langues, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et besoins
-          spécifiques.
-        </p>
-        <p class="text-lg text-gray-600 font-texte leading-relaxed">
-          Notre mission est de vous emmener dans un voyage unique et gratifiant à travers les langues. Que vous rêviez
-          de communiquer couramment dans une nouvelle langue, que vous ayez besoin de vous préparer à un examen
-          officiel, que vous souhaitiez obtenir une certification reconnue internationalement, que vous cherchiez de
-          nouvelles opportunités professionnelles ou que vous ayez simplement besoin de cours particuliers, nous sommes
-          là pour vous soutenir à chaque étape.
+
+      <!-- Section header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: #A8904A; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem;">
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+          Notre Histoire
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+        </div>
+        <h2 class="font-title-rubrique" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #0A1E2E; line-height: 1.15; margin-bottom: 1.25rem;">Académie de langues à Villarreal</h2>
+        <p style="color: rgba(30,27,24,0.5); font-size: 1rem; max-width: 620px; margin: 0 auto; line-height: 1.8;">
+          Tu Viaje Lingüístico est bien plus qu'une école de langues — nous sommes vos compagnons de voyage, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et besoins.
         </p>
       </div>
 
       <!-- Features Carousel -->
-      <div class="swiper mySwiper mb-20 px-4 pb-12">
-        <div class="swiper-wrapper">
-          <!-- Feature 1 -->
-          <div class="swiper-slide">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
-              data-aos="fade-up" data-aos-delay="100">
-              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
-                <i class="fa-solid fa-user-graduate text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Approche Personnalisée</h3>
-              <p class="text-gray-600 font-texte">
-                Tu Viaje Lingüístico est bien plus qu'une école de langues. Nous sommes vos compagnons de voyage dans le
-                monde fascinant des langues, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et
-                besoins spécifiques.
-              </p>
-            </div>
-          </div>
-          <!-- Feature 2 -->
-          <div class="swiper-slide">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
-              data-aos="fade-up" data-aos-delay="200">
-              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
-                <i class="fa-solid fa-shapes text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Variété de méthodes d'apprentissage
-              </h3>
-              <p class="text-gray-600 font-texte">
-                Nous offrons une large gamme d'options d'apprentissage. Vous pouvez choisir des cours particuliers dans
-                le
-                confort de votre maison, un environnement inspirant dans notre académie, des cours en ligne pour une
-                flexibilité maximale, ou même des programmes pour entreprises qui boosteront votre succès professionnel.
-              </p>
-            </div>
-          </div>
-          <!-- Feature 3 -->
-          <div class="swiper-slide">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
-              data-aos="fade-up" data-aos-delay="300">
-              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
-                <i class="fa-solid fa-star text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Résultats Prouvés</h3>
-              <p class="text-gray-600 font-texte">
-                Au fil des années, nous avons aidé d'innombrables étudiants à atteindre leurs objectifs linguistiques et
-                à
-                ouvrir des portes vers de nouvelles opportunités dans leur vie. Un environnement d'apprentissage
-                inspirant.
-              </p>
-            </div>
-          </div>
-          <!-- Feature 4 -->
-          <div class="swiper-slide">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
-              data-aos="fade-up" data-aos-delay="300">
-              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
-                <i class="fa-solid fa-star text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Un environnement d'apprentissage
-                inspirant</h3>
-              <p class="text-gray-600 font-texte">
-                Notre académie est conçue pour vous offrir un environnement accueillant et motivant, où l'apprentissage
-                devient une expérience enrichissante et amusante.
-              </p>
-            </div>
-          </div>
-          <!-- Feature 5 -->
-          <div class="swiper-slide h-auto">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border border-gray-100 h-full hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
-              data-aos="fade-up" data-aos-delay="300">
-              <div class="w-14 h-14 bg-lite-yellow rounded-full flex items-center justify-center mb-6 text-main-yellow">
-                <i class="fa-solid fa-star text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 font-title-rubrique mb-3">Engagement envers votre succès</h3>
-              <p class="text-gray-600 font-texte">
-                Nous ne vous fournissons pas seulement des connaissances, mais aussi le soutien et l'orientation dont
-                vous
-                avez besoin pour atteindre vos objectifs avec succès.
-              </p>
-            </div>
-          </div>
+      <div class="mb-20" data-aos="fade-up">
+        <!-- Navigation controls -->
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <button class="swiper-btn-custom swiper-prev-custom" aria-label="Précédent">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="swiper-btn-custom swiper-next-custom" aria-label="Suivant">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
-        <div class="swiper-pagination"></div>
+
+        <div class="swiper mySwiper pb-12">
+          <div class="swiper-wrapper">
+
+            <!-- Feature 1 -->
+            <div class="swiper-slide">
+              <div class="metodo-card h-full">
+                <div class="metodo-card-num">01</div>
+                <div class="feature-icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+                <h3 class="font-title-rubrique" style="font-size: 1.1rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Approche Personnalisée</h3>
+                <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Nous sommes vos compagnons de voyage dans le monde des langues, avec une approche personnalisée et flexible qui s'adapte à vos objectifs et besoins spécifiques.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="swiper-slide">
+              <div class="metodo-card h-full">
+                <div class="metodo-card-num">02</div>
+                <div class="feature-icon-box"><i class="fa-solid fa-shapes"></i></div>
+                <h3 class="font-title-rubrique" style="font-size: 1.1rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Variété de Méthodes</h3>
+                <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Cours particuliers, académie, cours en ligne ou programmes pour entreprises — nous trouvons le format qui vous convient pour une flexibilité maximale.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="swiper-slide">
+              <div class="metodo-card h-full">
+                <div class="metodo-card-num">03</div>
+                <div class="feature-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="font-title-rubrique" style="font-size: 1.1rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Résultats Prouvés</h3>
+                <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Au fil des années, nous avons aidé d'innombrables étudiants à atteindre leurs objectifs linguistiques et à ouvrir des portes vers de nouvelles opportunités.</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="swiper-slide">
+              <div class="metodo-card h-full">
+                <div class="metodo-card-num">04</div>
+                <div class="feature-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3 class="font-title-rubrique" style="font-size: 1.1rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Environnement Inspirant</h3>
+                <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Notre académie est conçue pour vous offrir un environnement accueillant et motivant, où l'apprentissage devient une expérience enrichissante et amusante.</p>
+              </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="swiper-slide">
+              <div class="metodo-card h-full">
+                <div class="metodo-card-num">05</div>
+                <div class="feature-icon-box"><i class="fa-solid fa-handshake"></i></div>
+                <h3 class="font-title-rubrique" style="font-size: 1.1rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Engagement envers votre Succès</h3>
+                <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Nous ne vous apportons pas seulement des connaissances, mais aussi le soutien et l'orientation dont vous avez besoin pour atteindre tous vos objectifs.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
 
       <!-- Profile Section -->
@@ -459,36 +497,36 @@
                 </p>
               </div>
 
-              <div class="mt-8">
-                <div class="pl-4 border-l-4 border-main-yellow/30 my-6">
-                  <h4 class="font-bold text-gray-800 mb-2">Expérience Diversifiée</h4>
-                  <p class="mb-2">J'ai travaillé avec tout type de public en Belgique et en Espagne :</p>
-                  <ul class="grid grid-cols-2 gap-2 text-sm">
-                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Enfants et
-                      Collège</li>
-                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Adultes</li>
-                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Personnes en
-                      situation de handicap</li>
-                    <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Entreprises
-                    </li>
-                  </ul>
-                </div>
-                <p>
-                  Toute cette expérience m'a permis d'enseigner avec une <strong>méthodologie différente pour chacun et
-                    selon son rythme</strong>. En même temps, j'essaie toujours d'apporter une dimension à la fois
-                  attrayante, ludique et agréable pour les intéresser.
-                </p>
-
-                <p class="italic text-gray-500 border-t border-gray-100 pt-4 mt-6">
-                  <i class="fa-solid fa-heart text-main-yellow mr-2"></i>
-                  "D'une part, être native et d'autre part, être passionnée par l'enseignement et les langues est ce qui
-                  me différencie et me permet d'apporter un enseignement de qualité et diversifié."
-                </p>
+              <div class="pl-4 border-l-4 border-main-yellow/30 my-6">
+                <h4 class="font-bold text-gray-800 mb-2">Expérience Diversifiée</h4>
+                <p class="mb-2">J'ai travaillé avec tout type de public en Belgique et en Espagne :</p>
+                <ul class="grid grid-cols-2 gap-2 text-sm">
+                  <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Enfants et
+                    Collège</li>
+                  <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Adultes</li>
+                  <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Personnes en
+                    situation de handicap</li>
+                  <li class="flex items-center"><i class="fa-solid fa-check text-main-yellow mr-2"></i> Entreprises
+                  </li>
+                </ul>
               </div>
-              <div class="mt-8 clear-both">
-                <h4 class="font-bold text-gray-800 mb-6 text-xl md:text-2xl font-title-rubrique text-main-yellow">Mon
-                  Parcours</h4>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+              <p>
+                Toute cette expérience m'a permis d'enseigner avec une <strong>méthodologie différente pour chacun et
+                  selon son rythme</strong>. En même temps, j'essaie toujours d'apporter une dimension à la fois
+                attrayante, ludique et agréable pour les intéresser.
+              </p>
+
+              <p class="italic text-gray-500 border-t border-gray-100 pt-4 mt-6">
+                <i class="fa-solid fa-heart text-main-yellow mr-2"></i>
+                "D'une part, être native et d'autre part, être passionnée par l'enseignement et les langues est ce qui
+                me différencie et me permet d'apporter un enseignement de qualité et diversifié."
+              </p>
+            </div>
+            <div class="mt-8">
+              <h4 class="font-bold text-gray-800 mb-6 text-xl md:text-2xl font-title-rubrique text-main-yellow">Mon
+                Parcours</h4>
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
                   <!-- Card 1: En Entreprise -->
                   <div
@@ -585,6 +623,7 @@
                 </div>
               </div>
 
+            <div class="mt-8 clear-both">
               <a href="#contact"
                 class="inline-flex items-center text-main-yellow font-bold hover:text-dark-yellow transition-colors">
                 Parlez avec Alicia <i class="fa-solid fa-arrow-right ml-2"></i>
@@ -911,19 +950,17 @@
   </section>
 
   <!-- Social Banner -->
-  <div class="bg-white py-16">
+  <div class="bg-white py-12">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-main-black font-title-rubrique mb-10 uppercase tracking-wide">
-        &#xa1;Suivez-nous sur les r&eacute;seaux !
-      </h2>
+      <h2 class="text-3xl font-bold font-title-rubrique mb-8 text-gray-800">&#xa1;Suivez-nous sur les <span class="text-gray-800">r&eacute;seaux !</span></h2>
       <div class="flex justify-center gap-8">
         <a href="https://www.facebook.com/Tuviajelinguistico" target="_blank"
-          class="bg-main-yellow hover:bg-dark-yellow text-white w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
-          <i class="fa-brands fa-facebook-f text-2xl"></i>
+          class="bg-main-yellow hover:bg-white text-white hover:text-main-yellow p-4 rounded-full transition-all duration-300 transform hover:scale-110">
+          <i class="fa-brands fa-facebook-f text-2xl w-6 h-6 flex items-center justify-center"></i>
         </a>
         <a href="https://www.instagram.com/tuviajelinguistico/" target="_blank"
-          class="bg-main-yellow hover:bg-dark-yellow text-white w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-md">
-          <i class="fa-brands fa-instagram text-2xl"></i>
+          class="bg-main-yellow hover:bg-white text-white hover:text-main-yellow p-4 rounded-full transition-all duration-300 transform hover:scale-110">
+          <i class="fa-brands fa-instagram text-2xl w-6 h-6 flex items-center justify-center"></i>
         </a>
       </div>
     </div>
@@ -931,86 +968,299 @@
   </div>
   </div>
 
+  <!-- Méthodologie & Objectifs Section -->
+  <style>
+    .metodo-card {
+      background: #fff;
+      border: 1px solid rgba(203,178,106,0.2);
+      border-radius: 20px;
+      padding: 2rem 1.75rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .metodo-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #CBB26A;
+      transform: scaleX(0);
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .metodo-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(203,178,106,0.45);
+      box-shadow: 0 12px 36px rgba(203,178,106,0.15);
+    }
+    .metodo-card:hover::before { transform: scaleX(1); }
+    .metodo-card-num {
+      position: absolute;
+      top: 1rem; right: 1.25rem;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(203,178,106,0.08);
+      line-height: 1;
+      user-select: none;
+      font-family: inherit;
+    }
+    .metodo-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #A8904A;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    .metodo-label::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: #CBB26A;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+  </style>
+
+  <section style="background: #FAF5E8;">
+    <div style="height: 2px; background: linear-gradient(90deg, transparent, #CBB26A, transparent);"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+
+      <!-- CENTERED HEADER -->
+      <div class="text-center mb-20" data-aos="fade-up">
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: #A8904A; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem;">
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+          Notre Essence
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+        </div>
+        <h2 class="font-title-rubrique" style="font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; color: #0A1E2E; line-height: 1.15; margin-bottom: 1.25rem;">
+          Méthodologie &amp; Objectifs
+        </h2>
+        <p style="color: rgba(30,27,24,0.5); font-size: 1rem; max-width: 560px; margin: 0 auto; line-height: 1.8;">
+          Une approche pédagogique unique qui transforme la façon d'apprendre les langues — consciente, ludique et orientée vers des résultats concrets.
+        </p>
+      </div>
+
+      <!-- BLOQUE 1: NOS APPROCHES -->
+      <div class="mb-20" data-aos="fade-up">
+        <div class="metodo-label">Nos Approches</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">01</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Pédagogie Active</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">L'élève est au cœur de son apprentissage — actif, participatif et impliqué à chaque séance.</p>
+          </div>
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">02</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Pédagogie Différenciée</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Le contenu s'adapte au maximum à vos besoins, objectifs et rythme propre de progression.</p>
+          </div>
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">03</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Pédagogie du Sens</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">La plus importante : donner du sens à ce que vous apprenez, savoir pourquoi et connecter la langue à votre vie réelle.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- QUOTE -->
+      <div class="mb-20" data-aos="fade-up">
+        <blockquote style="border-left: 2px solid #CBB26A; padding: 1rem 2rem; max-width: 720px; margin: 0 auto; text-align: center;">
+          <p style="font-size: 1.1rem; font-style: italic; color: rgba(30,27,24,0.6); line-height: 1.8;">
+            "Avec moi, vous n'apprendrez pas une langue uniquement par cœur. Mon objectif est d'enseigner à apprendre de façon consciente, ludique et significative — avec un impact réel sur votre quotidien."
+          </p>
+        </blockquote>
+      </div>
+
+      <!-- BLOQUE 2: NOS OBJECTIFS -->
+      <div class="mb-20" data-aos="fade-up">
+        <div class="metodo-label">Nos Objectifs</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">01</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Changer votre perspective</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Rompre avec les méthodes obsolètes et vous prouver qu'apprendre une langue peut être une expérience stimulante et plaisante.</p>
+          </div>
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">02</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Vous guider dans votre voyage</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Vous accompagner pas à pas grâce à diverses méthodes qui vous assurent d'atteindre un bon niveau dans la langue étudiée.</p>
+          </div>
+
+          <div class="metodo-card">
+            <div class="metodo-card-num">03</div>
+            <h4 class="font-title-rubrique" style="font-size: 1.05rem; font-weight: 700; color: #0A1E2E; margin-bottom: 0.65rem;">Chaque cours, une vraie avancée</h4>
+            <p style="font-size: 0.9rem; color: rgba(30,27,24,0.6); line-height: 1.75;">Repartir de chaque cours avec quelque chose de concret appris et compris — avec l'envie et la motivation de revenir.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA BANNER -->
+      <div data-aos="fade-up" style="background: #0A1E2E; border-radius: 24px; padding: 3rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; position: relative; overflow: hidden; margin-bottom: 4rem;">
+        <div style="position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(203,178,106,0.12) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="position: relative; z-index: 1;">
+          <div style="color: #CBB26A; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.6rem;">Commencer</div>
+          <h3 class="font-title-rubrique" style="font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 800; color: #fff; line-height: 1.25; margin-bottom: 0.6rem;">Prêt(e) à commencer votre voyage linguistique ?</h3>
+          <p style="font-size: 0.95rem; color: rgba(255,255,255,0.5); line-height: 1.7;">Contactez Alicia et faites le premier pas vers la langue que vous avez toujours voulu maîtriser.</p>
+        </div>
+        <div style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 0.85rem; align-items: flex-end;">
+          <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.6rem; background: #CBB26A; color: #fff; font-weight: 700; font-size: 0.95rem; padding: 0.85rem 1.75rem; border-radius: 50px; text-decoration: none; white-space: nowrap; transition: transform 0.25s, box-shadow 0.25s; box-shadow: 0 6px 20px rgba(203,178,106,0.3);"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 28px rgba(203,178,106,0.45)'"
+            onmouseout="this.style.transform=''; this.style.boxShadow='0 6px 20px rgba(203,178,106,0.3)'">
+            <i class="fa-solid fa-paper-plane"></i> Commencer maintenant
+          </a>
+          <a href="#alicia" style="display: inline-flex; align-items: center; gap: 0.6rem; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.65); font-size: 0.9rem; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; white-space: nowrap; transition: border-color 0.25s, color 0.25s;"
+            onmouseover="this.style.borderColor='#CBB26A'; this.style.color='#CBB26A'"
+            onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.color='rgba(255,255,255,0.65)'">
+            <i class="fa-solid fa-user"></i> Qui suis-je ?
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom stats -->
+      <div class="flex flex-wrap gap-12 md:gap-20 pt-10" style="border-top: 1px solid rgba(203,178,106,0.35);" data-aos="fade-up">
+        <div>
+          <div class="font-title-rubrique" style="font-size: 2rem; font-weight: 800; color: #0A1E2E; line-height: 1;">3</div>
+          <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.35); margin-top: 0.35rem;">Approches pédagogiques</div>
+        </div>
+        <div>
+          <div class="font-title-rubrique" style="font-size: 2rem; font-weight: 800; color: #0A1E2E; line-height: 1;">100%</div>
+          <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.35); margin-top: 0.35rem;">Personnalisé</div>
+        </div>
+        <div>
+          <div class="font-title-rubrique" style="font-size: 2rem; font-weight: 800; color: #0A1E2E; line-height: 1;">∞</div>
+          <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(30,27,24,0.35); margin-top: 0.35rem;">Motivation</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Schedule Section -->
 
   <!-- Contact & Footer -->
-  <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-        <!-- Contact Info -->
-        <div>
-          <h3 class="text-2xl font-bold font-title-rubrique mb-6 text-main-yellow">Contactez-nous</h3>
-          <p class="text-gray-400 mb-8 max-w-md">
-            Vous avez des questions ? Vous voulez réserver votre place ? Écrivez-nous et commencez votre voyage
-            linguistique dès aujourd'hui.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <i class="fa-solid fa-location-dot mt-1 text-main-yellow"></i>
-              <span class="text-gray-300">Avenida Francisco Tàrrega 80,<br>12540 Vila-real, Castellón</span>
-            </div>
-            <div class="flex items-center gap-4">
-              <i class="fa-solid fa-phone text-main-yellow"></i>
-              <a href="tel:+34641428140" class="text-gray-300 hover:text-white transition-colors">641 428 140</a>
-            </div>
-            <div class="flex items-center gap-4">
-              <i class="fa-solid fa-envelope text-main-yellow"></i>
-              <a href="mailto:Tuviajelinguistico@gmail.com"
-                class="text-gray-300 hover:text-white transition-colors">Tuviajelinguistico@gmail.com</a>
-            </div>
+  <footer id="contact" style="background: #0A1E2E; position: relative;">
+    <div style="height: 3px; background: linear-gradient(90deg, transparent, #CBB26A, transparent);"></div>
 
-            <!-- Google Map -->
-            <div class="mt-6 rounded-lg overflow-hidden shadow-lg border border-gray-700">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.8944444444444!2d-0.1013888!3d39.9366667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ffe4f4f4f4f4f%3A0x4f4f4f4f4f4f4f4f!2sAvenida%20Francisco%20T%C3%A0rrega%2C%2080%2C%2012540%20Vila-real%2C%20Castell%C3%B3n!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses&q=Avenida+Francisco+Tàrrega+80,+12540+Vila-real,+Castellón"
-                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8" style="padding-top: 5rem; padding-bottom: 3rem;">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem; color: #CBB26A; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.25rem;">
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+          Contact
+          <span style="display: block; width: 28px; height: 2px; background: #CBB26A; border-radius: 2px;"></span>
+        </div>
+        <h2 class="font-title-rubrique" style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.15;">
+          Commençons votre voyage ?
+        </h2>
+      </div>
+
+      <!-- Grid: contact + form -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+
+        <!-- LEFT: Contact info -->
+        <div>
+          <p style="color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.8; margin-bottom: 2rem; max-width: 380px;">
+            Vous avez des questions ? Vous voulez réserver votre place ? Écrivez-nous et commencez votre voyage linguistique dès aujourd'hui.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.1rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 36px; height: 36px; min-width: 36px; background: rgba(203,178,106,0.12); border: 1px solid rgba(203,178,106,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #CBB26A; font-size: 0.85rem;">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <span style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.6; padding-top: 0.45rem;">Avenida Francisco Tàrrega 80,<br>12540 Vila-real, Castellón</span>
             </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 36px; height: 36px; min-width: 36px; background: rgba(203,178,106,0.12); border: 1px solid rgba(203,178,106,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #CBB26A; font-size: 0.85rem;">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <a href="tel:+34641428140" style="color: rgba(255,255,255,0.7); font-size: 0.9rem; text-decoration: none; transition: color 0.2s;"
+                onmouseover="this.style.color='#CBB26A'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">641 428 140</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 36px; height: 36px; min-width: 36px; background: rgba(203,178,106,0.12); border: 1px solid rgba(203,178,106,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #CBB26A; font-size: 0.85rem;">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <a href="mailto:Tuviajelinguistico@gmail.com" style="color: rgba(255,255,255,0.7); font-size: 0.9rem; text-decoration: none; transition: color 0.2s;"
+                onmouseover="this.style.color='#CBB26A'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Tuviajelinguistico@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid rgba(203,178,106,0.2); box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.8944444444444!2d-0.1013888!3d39.9366667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ffe4f4f4f4f4f%3A0x4f4f4f4f4f4f4f4f!2sAvenida%20Francisco%20T%C3%A0rrega%2C%2080%2C%2012540%20Vila-real%2C%20Castell%C3%B3n!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses&q=Avenida+Francisco+Tàrrega+80,+12540+Vila-real,+Castellón"
+              width="100%" height="200" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
 
-        <!-- Simple Form (Conceptual, needs backend/EmailJS config) -->
-        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-700">
+        <!-- RIGHT: Form -->
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(203,178,106,0.18); border-radius: 20px; padding: 2.5rem;">
+          <h3 class="font-title-rubrique" style="font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 1.75rem;">Envoyez-nous un message</h3>
           <form onsubmit="sendMail(event)">
-            <div class="grid grid-cols-1 gap-6">
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
               <div>
-                <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Nom</label>
+                <label for="name" style="display: block; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Nom</label>
                 <input type="text" id="name"
-                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
-                  placeholder="Votre nom">
+                  style="width: 100%; padding: 0.75rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.07); border: 1px solid rgba(203,178,106,0.2); color: #fff; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
+                  placeholder="Votre nom"
+                  onfocus="this.style.borderColor='#CBB26A'" onblur="this.style.borderColor='rgba(203,178,106,0.2)'">
               </div>
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                <label for="email" style="display: block; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Email</label>
                 <input type="email" id="email"
-                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
-                  placeholder="votre@email.com">
+                  style="width: 100%; padding: 0.75rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.07); border: 1px solid rgba(203,178,106,0.2); color: #fff; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
+                  placeholder="votre@email.com"
+                  onfocus="this.style.borderColor='#CBB26A'" onblur="this.style.borderColor='rgba(203,178,106,0.2)'">
               </div>
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                <label for="message" style="display: block; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Message</label>
                 <textarea id="message" rows="4"
-                  class="w-full px-4 py-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:outline-none focus:border-main-yellow focus:ring-1 focus:ring-main-yellow transition-colors"
-                  placeholder="En quoi pouvons-nous vous aider ?"></textarea>
+                  style="width: 100%; padding: 0.75rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.07); border: 1px solid rgba(203,178,106,0.2); color: #fff; font-size: 0.9rem; outline: none; transition: border-color 0.2s; resize: vertical;"
+                  placeholder="En quoi pouvons-nous vous aider ?"
+                  onfocus="this.style.borderColor='#CBB26A'" onblur="this.style.borderColor='rgba(203,178,106,0.2)'"></textarea>
               </div>
               <button type="submit"
-                class="w-full bg-main-yellow hover:bg-dark-yellow text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-lg">
-                Envoyer le message
+                style="width: 100%; background: #CBB26A; color: #fff; font-weight: 700; font-size: 0.95rem; padding: 0.9rem; border-radius: 50px; border: none; cursor: pointer; transition: transform 0.25s, box-shadow 0.25s; box-shadow: 0 6px 20px rgba(203,178,106,0.25); font-family: inherit;"
+                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 28px rgba(203,178,106,0.4)'"
+                onmouseout="this.style.transform=''; this.style.boxShadow='0 6px 20px rgba(203,178,106,0.25)'">
+                Envoyer le message &nbsp;<i class="fa-solid fa-paper-plane" style="font-size: 0.8rem;"></i>
               </button>
             </div>
           </form>
         </div>
+
       </div>
 
-      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">
-          &copy; 2024 Tu Viaje Lingüístico. Tous droits réservés.
+      <!-- Bottom bar -->
+      <div style="border-top: 1px solid rgba(203,178,106,0.2); padding-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+        <p style="font-size: 0.82rem; color: rgba(255,255,255,0.35);">
+          &copy; 2026 Tu Viaje Lingüístico. Tous droits réservés.
         </p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-main-yellow text-sm transition-colors">Politique de
-            Confidentialité</a>
-          <a href="#" class="text-gray-400 hover:text-main-yellow text-sm transition-colors">Mentions Légales</a>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="font-size: 0.82rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s;"
+            onmouseover="this.style.color='#CBB26A'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Mentions légales</a>
+          <a href="#" style="font-size: 0.82rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s;"
+            onmouseover="this.style.color='#CBB26A'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Confidentialité</a>
         </div>
       </div>
+
     </div>
   </footer>
 
@@ -1018,50 +1268,21 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800,
       once: true,
-      offset: 100,
+      duration: 800,
       easing: 'ease-out-cubic'
     });
 
 
 
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
+    // Navbar Transition
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 10) {
         navbar.classList.add('shadow-md');
-        navbar.classList.replace('bg-white/90', 'bg-white/95');
       } else {
         navbar.classList.remove('shadow-md');
-        navbar.classList.replace('bg-white/95', 'bg-white/90');
       }
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          // Close mobile menu if open
-          if (!menu.classList.contains('hidden')) {
-            menu.classList.add('hidden');
-          }
-
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
-        }
-      });
     });
   </script>
   <script src="script.js"></script>
@@ -1158,11 +1379,12 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 24,
       loop: true,
       autoplay: {
-        delay: 4000, // 4 seconds
+        delay: 4500,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       pagination: {
         el: ".swiper-pagination",
@@ -1177,12 +1399,12 @@
           slidesPerView: 2,
           spaceBetween: 40,
         },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
+        768: { slidesPerView: 2, spaceBetween: 24 },
+        1024: { slidesPerView: 3, spaceBetween: 28 },
       },
     });
+    document.querySelector('.swiper-prev-custom').addEventListener('click', () => swiper.slidePrev());
+    document.querySelector('.swiper-next-custom').addEventListener('click', () => swiper.slideNext());
   </script>
 </body>
 
